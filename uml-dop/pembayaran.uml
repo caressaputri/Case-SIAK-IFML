@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001"
-  xmlns:xmi="http://www.omg.org/spec/XMI/20131001"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-  xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"
-  xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml"
-  xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ">
-
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ">
   <uml:Model xmi:id="_root" name="PembayaranSLCM">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_pkgimport_primitives">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-
     <packagedElement xmi:type="uml:Package" xmi:id="_pkg_main" name="PembayaranSLCM">
-
       <packagedElement xmi:type="uml:DataType" xmi:id="_dt_uuid" name="UUID"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_dt_datetime" name="DateTime"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_dt_hashmap" name="HashMap"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_dt_vmjexchange" name="VMJExchange"/>
-
-      <!-- ═══════════════ MPembayaran Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mpembayaran" name="MPembayaran">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_pembayaran" name="Pembayaran"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_pembayaranimpl" name="PembayaranImpl" visibility="public">
@@ -55,8 +44,6 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MTagihan Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mtagihan" name="MTagihan">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_tagihan" name="Tagihan"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_tagihanimpl" name="TagihanImpl" visibility="public">
@@ -77,8 +64,6 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MMahasiswa Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mmahasiswa" name="MMahasiswa">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_mahasiswa" name="Mahasiswa"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_mahasiswaimpl" name="MahasiswaImpl" visibility="public">
@@ -105,8 +90,6 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MSemester Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_msemester" name="MSemester">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_semester" name="Semester"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_semesterimpl" name="SemesterImpl" visibility="public">
@@ -129,8 +112,6 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ir_sem" client="_cls_semesterimpl" supplier="_if_semester" contract="_if_semester"/>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MMataKuliah Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mmatakuliah" name="MMataKuliah">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_matakuliah" name="MataKuliah"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_matakuliahimpl" name="MataKuliahImpl" visibility="public">
@@ -150,8 +131,6 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ir_mk" client="_cls_matakuliahimpl" supplier="_if_matakuliah" contract="_if_matakuliah"/>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MDosen Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mdosen" name="MDosen">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_dosen" name="Dosen"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_dosenimpl" name="DosenImpl" visibility="public">
@@ -168,8 +147,6 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ir_dsn" client="_cls_dosenimpl" supplier="_if_dosen" contract="_if_dosen"/>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MJadwal Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mjadwal" name="MJadwal">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_jadwal" name="Jadwal"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_jadwalimpl" name="JadwalImpl" visibility="public">
@@ -189,8 +166,6 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ir_jdw" client="_cls_jadwalimpl" supplier="_if_jadwal" contract="_if_jadwal"/>
         </packagedElement>
       </packagedElement>
-
-      <!-- ═══════════════ MPengisianRencanaStudi Module ═══════════════ -->
       <packagedElement xmi:type="uml:Package" xmi:id="_pkg_mprs" name="MPengisianRencanaStudi">
         <packagedElement xmi:type="uml:Interface" xmi:id="_if_prs" name="PengisianRencanaStudi"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cls_prsimpl" name="PengisianRencanaStudiImpl" visibility="public">
@@ -214,7 +189,7 @@
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_param_isi_in" name="vmjExchange" type="_dt_vmjexchange"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_param_isi_out" type="_dt_hashmap" direction="return"/>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_op_prs_get" name="getIRS">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_op_prs_get" name="getIRS" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_param_get_in" name="vmjExchange" type="_dt_vmjexchange"/>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_param_get_out" type="_dt_hashmap" direction="return"/>
           </ownedOperation>
@@ -224,100 +199,73 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
-
     </packagedElement>
-
-    <!-- ═══════════════ Associations ═══════════════ -->
-
-    <!-- Pembayaran *→1 Tagihan -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_pemb_tagihan" memberEnd="_attr_pemb_tagihan _oe_pemb_tagihan">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_pemb_tagihan" name="pembayaranimpl" type="_cls_pembayaranimpl" association="_assoc_pemb_tagihan">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_pemb_tag"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_pemb_tag" value="1"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Pembayaran *→1 Mahasiswa -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_pemb_mhs" memberEnd="_attr_pemb_mhs _oe_pemb_mhs">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_pemb_mhs" name="pembayaranimpl" type="_cls_pembayaranimpl" association="_assoc_pemb_mhs">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_pemb_mhs"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_pemb_mhs" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Pembayaran *→1 Semester -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_pemb_sem" memberEnd="_attr_pemb_sem _oe_pemb_sem">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_pemb_sem" name="pembayaranimpl" type="_cls_pembayaranimpl" association="_assoc_pemb_sem">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_pemb_sem"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_pemb_sem" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Tagihan *→1 Mahasiswa -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_tag_mhs" memberEnd="_attr_tag_mhs _oe_tag_mhs">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_tag_mhs" name="tagihanimpl" type="_cls_tagihanimpl" association="_assoc_tag_mhs">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_tag_mhs"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_tag_mhs" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Tagihan *→1 Semester -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_tag_sem" memberEnd="_attr_tag_sem _oe_tag_sem">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_tag_sem" name="tagihanimpl" type="_cls_tagihanimpl" association="_assoc_tag_sem">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_tag_sem"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_tag_sem" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- PRS *→1 Mahasiswa -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_prs_mhs" memberEnd="_attr_prs_mhs _oe_prs_mhs">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_prs_mhs" name="pengisianrencanastudiimpl" type="_cls_prsimpl" association="_assoc_prs_mhs">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_prs_mhs"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_prs_mhs" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- PRS *→1 Semester -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_prs_sem" memberEnd="_attr_prs_sem _oe_prs_sem">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_prs_sem" name="pengisianrencanastudiimpl" type="_cls_prsimpl" association="_assoc_prs_sem">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_prs_sem"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_prs_sem" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- PRS *→* MataKuliah -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_prs_mk" memberEnd="_attr_prs_mk _oe_prs_mk">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_prs_mk" name="pengisianrencanastudiimpl" type="_cls_prsimpl" association="_assoc_prs_mk">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_prs_mk_oe"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_prs_mk_oe" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Jadwal *→1 MataKuliah -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_jdw_mk" memberEnd="_attr_jdw_mk _oe_jdw_mk">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_jdw_mk" name="jadwalimpl" type="_cls_jadwalimpl" association="_assoc_jdw_mk">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_jdw_mk"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_jdw_mk" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Jadwal *→1 Dosen -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_jdw_dsn" memberEnd="_attr_jdw_dsn _oe_jdw_dsn">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_jdw_dsn" name="jadwalimpl" type="_cls_jadwalimpl" association="_assoc_jdw_dsn">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_jdw_dsn"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_jdw_dsn" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- Jadwal *→1 Semester -->
     <packagedElement xmi:type="uml:Association" xmi:id="_assoc_jdw_sem" memberEnd="_attr_jdw_sem _oe_jdw_sem">
       <ownedEnd xmi:type="uml:Property" xmi:id="_oe_jdw_sem" name="jadwalimpl" type="_cls_jadwalimpl" association="_assoc_jdw_sem">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lv_jdw_sem"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uv_jdw_sem" value="*"/>
       </ownedEnd>
     </packagedElement>
-
-    <!-- ═══════════════ Profile Application ═══════════════ -->
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_profapp_umlvm">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_profapp_ann_uml" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ"/>
@@ -325,13 +273,7 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
     </profileApplication>
   </uml:Model>
-
-  <!-- ═══════════════ UML-VM Profile Stereotype Applications ═══════════════ -->
-
-  <!-- SIAKPembayaran root package = «vm» -->
   <umlvmprofile:vm xmi:id="_st_vm" base_Package="_pkg_main"/>
-
-  <!-- Module packages = «module» -->
   <umlvmprofile:module xmi:id="_st_mod_pembayaran" base_Package="_pkg_mpembayaran"/>
   <umlvmprofile:module xmi:id="_st_mod_tagihan" base_Package="_pkg_mtagihan"/>
   <umlvmprofile:module xmi:id="_st_mod_mahasiswa" base_Package="_pkg_mmahasiswa"/>
@@ -348,6 +290,4 @@
   <umlvmprofile:pk xmi:id="_7m4bG4KAR_2FAuu2_5nDlA" base_Property="_attr_dsn_id"/>
   <umlvmprofile:pk xmi:id="_fcZhvcn4Qsip3Z7NFOVLdg" base_Property="_attr_jdw_id"/>
   <umlvmprofile:pk xmi:id="_rbeeU-5PTySASFzUfyFCgg" base_Property="_attr_prs_id"/>
-
-
 </xmi:XMI>

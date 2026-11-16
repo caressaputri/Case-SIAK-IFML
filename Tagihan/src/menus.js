@@ -45,11 +45,3 @@ export const settingsMenu = [
 ]
 
 export default menus;
-
-addMenu({
-	id: '_5lM8sNg_EfGG8dLC5rTvHA',
-	route: '/tagihan',
-    label: 'Tagihan',
-    permission: '',
-	subMenus: [],
-})

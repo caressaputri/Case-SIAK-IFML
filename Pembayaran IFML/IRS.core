@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_cT9DEOGpEfGIXdw6TcAYcQ">
+  <domainModel id="_cT9DEeGpEfGIXdw6TcAYcQ">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUG0EOGpEfGIXdw6TcAYcQ" name="PembayaranImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_pembayaranimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbIOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbIeGpEfGIXdw6TcAYcQ" name="paymentId">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_paymentid"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbIuGpEfGIXdw6TcAYcQ" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_amount"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbI-GpEfGIXdw6TcAYcQ" name="status">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbJOGpEfGIXdw6TcAYcQ" name="metodePembayaran">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_metode"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbJeGpEfGIXdw6TcAYcQ" name="tanggalBayar">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_tanggal"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbJuGpEfGIXdw6TcAYcQ" name="sumberStatus">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_sumber"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbJ-GpEfGIXdw6TcAYcQ" name="tanggalVerifikasi">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_verif"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbKOGpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_tagihan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbKeGpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbKuGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbK-GpEfGIXdw6TcAYcQ" name="cicilanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_pemb_cic"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbLOGpEfGIXdw6TcAYcQ" name="bayarUkt">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_pemb_bayar"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbLeGpEfGIXdw6TcAYcQ" name="cekStatusPembayaran">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_pemb_cekstatus"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbLuGpEfGIXdw6TcAYcQ" name="konfirmasiPembayaran">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_pemb_update"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbL-GpEfGIXdw6TcAYcQ" name="TagihanImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_tagihanimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbMOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbMeGpEfGIXdw6TcAYcQ" name="jumlahTagihan">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_jumlah"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbMuGpEfGIXdw6TcAYcQ" name="statusPembayaran">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbM-GpEfGIXdw6TcAYcQ" name="jatuhTempo">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_jatuh_tempo"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbNOGpEfGIXdw6TcAYcQ" name="golonganUkt">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_golongan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbNeGpEfGIXdw6TcAYcQ" name="skemaPembayaran">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_skema"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbNuGpEfGIXdw6TcAYcQ" name="jumlahTerbayar">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_terbayar"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbN-GpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbOOGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_tag_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbOeGpEfGIXdw6TcAYcQ" name="lihatTagihanUkt">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_tag_lihat"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbOuGpEfGIXdw6TcAYcQ" name="listTagihanPerSemester">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_tag_list_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbO-GpEfGIXdw6TcAYcQ" name="MahasiswaImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_mahasiswaimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbPOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbPeGpEfGIXdw6TcAYcQ" name="npm">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_npm"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbPuGpEfGIXdw6TcAYcQ" name="nama">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_nama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbP-GpEfGIXdw6TcAYcQ" name="email">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_email"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbQOGpEfGIXdw6TcAYcQ" name="statusAkademik">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_statusakademik"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbQeGpEfGIXdw6TcAYcQ" name="tahunAngkatan">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mhs_tahunangkatan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbQuGpEfGIXdw6TcAYcQ" name="loginMahasiswa">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_mhs_login"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbQ-GpEfGIXdw6TcAYcQ" name="SemesterImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_semesterimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbROGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbReGpEfGIXdw6TcAYcQ" name="kode">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_kode"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbRuGpEfGIXdw6TcAYcQ" name="status">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbR-GpEfGIXdw6TcAYcQ" name="tanggalMulai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_tanggalmulai"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbSOGpEfGIXdw6TcAYcQ" name="tanggalSelesai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_tanggalselesai"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbSeGpEfGIXdw6TcAYcQ" name="deskripsi">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_sem_deskripsi"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbSuGpEfGIXdw6TcAYcQ" name="MataKuliahImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_matakuliahimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbS-GpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mk_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbTOGpEfGIXdw6TcAYcQ" name="kode">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mk_kode"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbTeGpEfGIXdw6TcAYcQ" name="nama">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mk_nama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbTuGpEfGIXdw6TcAYcQ" name="sks">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mk_sks"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbT-GpEfGIXdw6TcAYcQ" name="term">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mk_term"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbUOGpEfGIXdw6TcAYcQ" name="DosenImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_dosenimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbUeGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_dsn_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbUuGpEfGIXdw6TcAYcQ" name="nip">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_dsn_nip"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbU-GpEfGIXdw6TcAYcQ" name="nama">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_dsn_nama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbVOGpEfGIXdw6TcAYcQ" name="email">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_dsn_email"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbVeGpEfGIXdw6TcAYcQ" name="JadwalImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_jadwalimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbVuGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbV-GpEfGIXdw6TcAYcQ" name="hari">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_hari"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbWOGpEfGIXdw6TcAYcQ" name="mulai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_jam"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbWeGpEfGIXdw6TcAYcQ" name="selesai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_selesai"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbWuGpEfGIXdw6TcAYcQ" name="kelasimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbW-GpEfGIXdw6TcAYcQ" name="ruanganimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_jdw_rgn"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbXOGpEfGIXdw6TcAYcQ" name="PengisianRencanaStudiImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_prsimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbXeGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbXuGpEfGIXdw6TcAYcQ" name="status">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbX-GpEfGIXdw6TcAYcQ" name="totalSks">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_totalsks"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbYOGpEfGIXdw6TcAYcQ" name="mulai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_mulai"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbYeGpEfGIXdw6TcAYcQ" name="akhir">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_akhir"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbYuGpEfGIXdw6TcAYcQ" name="alasanPembatalan">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_alasan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbY-GpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbZOGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_prs_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbZeGpEfGIXdw6TcAYcQ" name="isiRencanaStudi">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_isi"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbZuGpEfGIXdw6TcAYcQ" name="getIRS">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_get"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbZ-GpEfGIXdw6TcAYcQ" name="irsTerkonfirmasi">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_konfirmasi"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbaOGpEfGIXdw6TcAYcQ" name="cekBentrokJadwal">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_bentrok"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbaeGpEfGIXdw6TcAYcQ" name="cekKapasitasKelas">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_kapasitas"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbauGpEfGIXdw6TcAYcQ" name="cekBatasSks">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_batas"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHba-GpEfGIXdw6TcAYcQ" name="batalkanIRS">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_prs_batal"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbbOGpEfGIXdw6TcAYcQ" name="KelasMahasiswaImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_kelasmhsimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbbeGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_klsmhs_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbbuGpEfGIXdw6TcAYcQ" name="kelasimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_klsmhs_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbb-GpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_klsmhs_prs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbcOGpEfGIXdw6TcAYcQ" name="tanggalPengisian">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_klsmhs_tgl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbceGpEfGIXdw6TcAYcQ" name="KelasImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_kelasimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbcuGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kls_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbc-GpEfGIXdw6TcAYcQ" name="nama">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kls_nama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbdOGpEfGIXdw6TcAYcQ" name="kapasitas">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kls_kapasitas"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbdeGpEfGIXdw6TcAYcQ" name="matakuliahimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kls_mk"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbduGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kls_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbd-GpEfGIXdw6TcAYcQ" name="BeasiswaImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_beasiswaimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbeOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbeeGpEfGIXdw6TcAYcQ" name="jenis">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_jenis"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbeuGpEfGIXdw6TcAYcQ" name="status">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbe-GpEfGIXdw6TcAYcQ" name="penundaanPembayaran">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_tunda"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbfOGpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbfeGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_bsw_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbfuGpEfGIXdw6TcAYcQ" name="cekKelayakanBeasiswa">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_bsw_cek"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbf-GpEfGIXdw6TcAYcQ" name="RuanganImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_ruanganimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbgOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_rgn_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbgeGpEfGIXdw6TcAYcQ" name="nama">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_rgn_nama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbguGpEfGIXdw6TcAYcQ" name="kapasitas">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_rgn_kapasitas"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbg-GpEfGIXdw6TcAYcQ" name="keterangan">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_rgn_keterangan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbhOGpEfGIXdw6TcAYcQ" name="IndeksPrestasiImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_ipimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbheGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbhuGpEfGIXdw6TcAYcQ" name="ips">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_ips"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbh-GpEfGIXdw6TcAYcQ" name="ipk">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_ipk"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbiOGpEfGIXdw6TcAYcQ" name="sksLulus">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_skslulus"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbieGpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbiuGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ip_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbi-GpEfGIXdw6TcAYcQ" name="KelasDosenImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_kdimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbjOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kd_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbjeGpEfGIXdw6TcAYcQ" name="bobot">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kd_bobot"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbjuGpEfGIXdw6TcAYcQ" name="kelasimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kd_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbj-GpEfGIXdw6TcAYcQ" name="dosenimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_kd_dsn"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUHbkOGpEfGIXdw6TcAYcQ" name="CicilanImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_cicimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbkeGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbkuGpEfGIXdw6TcAYcQ" name="cicilanKe">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_ke"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbk-GpEfGIXdw6TcAYcQ" name="jumlah">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_jumlah"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHblOGpEfGIXdw6TcAYcQ" name="jatuhTempo">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_jt"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbleGpEfGIXdw6TcAYcQ" name="status">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbluGpEfGIXdw6TcAYcQ" name="tanggalBayar">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_tgl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUHbl-GpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_cic_tag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUHbmOGpEfGIXdw6TcAYcQ" name="cekCicilanPertama">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_cic_pertama"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUICMOGpEfGIXdw6TcAYcQ" name="PeriodeRegistrasiImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_perimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICMeGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_per_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICMuGpEfGIXdw6TcAYcQ" name="jenis">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_per_jenis"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICM-GpEfGIXdw6TcAYcQ" name="mulai">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_per_mulai"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICNOGpEfGIXdw6TcAYcQ" name="akhir">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_per_akhir"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICNeGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_per_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUICNuGpEfGIXdw6TcAYcQ" name="cekPeriodeAktif">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_per_aktif"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUICN-GpEfGIXdw6TcAYcQ" name="RegistrasiImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_regimpl"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICOOGpEfGIXdw6TcAYcQ" name="id">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_id"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICOeGpEfGIXdw6TcAYcQ" name="statusAdministrasi">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_adm"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICOuGpEfGIXdw6TcAYcQ" name="statusAkademik">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_akd"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICO-GpEfGIXdw6TcAYcQ" name="statusSemester">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_sem_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICPOGpEfGIXdw6TcAYcQ" name="semesterKosongBerturut">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_kosong"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICPeGpEfGIXdw6TcAYcQ" name="mahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICPuGpEfGIXdw6TcAYcQ" name="semesterimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_reg_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUICP-GpEfGIXdw6TcAYcQ" name="tetapkanStatusSemester">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_reg_status"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUICQOGpEfGIXdw6TcAYcQ" name="TagihanImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICQeGpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ref_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICQuGpEfGIXdw6TcAYcQ" name="tagihanimplMTagihan">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mod_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICQ-GpEfGIXdw6TcAYcQ" name="potonganBeasiswa">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_potonganbeasiswa_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUICROGpEfGIXdw6TcAYcQ" name="lihatTagihanUkt">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_lihattagihanukt_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUICReGpEfGIXdw6TcAYcQ" name="PembayaranImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_dirsdb"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICRuGpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ref_dirsdb"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICR-GpEfGIXdw6TcAYcQ" name="pembayaranimplMPembayaran">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mod_dirsdb"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUICSOGpEfGIXdw6TcAYcQ" name="bayarUkt">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_bayarukt_dirsdb"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cUICSeGpEfGIXdw6TcAYcQ" name="PengisianRencanaStudiImpl">
+      <classifier xsi:type="uml:Class" href="pembayaran.uml#_cls_dbdirs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICSuGpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_ref_dbdirs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICS-GpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimplMPengisianRencanaStudi">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_attr_mod_dbdirs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cUICTOGpEfGIXdw6TcAYcQ" name="isiRencanaStudi">
+      <behavioralFeature xsi:type="uml:Operation" href="pembayaran.uml#_op_isirencanastudi_dbdirs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICTeGpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_pemb_tagihan"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICTuGpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_pemb_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICT-GpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_pemb_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICUOGpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_tag_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICUeGpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_tag_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICUuGpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_prs_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICU-GpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_prs_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICVOGpEfGIXdw6TcAYcQ" name="kelasimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_kls_mk"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICVeGpEfGIXdw6TcAYcQ" name="kelasimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_kls_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICVuGpEfGIXdw6TcAYcQ" name="jadwalimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_jdw_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICV-GpEfGIXdw6TcAYcQ" name="kelasmahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_klsmhs_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICWOGpEfGIXdw6TcAYcQ" name="kelasmahasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_klsmhs_prs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICWeGpEfGIXdw6TcAYcQ" name="beasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_bsw_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICWuGpEfGIXdw6TcAYcQ" name="beasiswaimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_bsw_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICW-GpEfGIXdw6TcAYcQ" name="jadwalimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_jdw_rgn"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICXOGpEfGIXdw6TcAYcQ" name="indeksprestasiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_ip_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICXeGpEfGIXdw6TcAYcQ" name="indeksprestasiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_ip_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICXuGpEfGIXdw6TcAYcQ" name="kelasdosenimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_kd_kls"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICX-GpEfGIXdw6TcAYcQ" name="kelasdosenimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_kd_dsn"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICYOGpEfGIXdw6TcAYcQ" name="cicilanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_cic_tag"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICYeGpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_pemb_cic"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICYuGpEfGIXdw6TcAYcQ" name="perioderegistrasiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_per_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICY-GpEfGIXdw6TcAYcQ" name="registrasiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_reg_mhs"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICZOGpEfGIXdw6TcAYcQ" name="registrasiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_reg_sem"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICZeGpEfGIXdw6TcAYcQ" name="tagihanimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_dbsw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICZuGpEfGIXdw6TcAYcQ" name="pembayaranimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_dirsdb"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cUICZ-GpEfGIXdw6TcAYcQ" name="pengisianrencanastudiimpl">
+      <structuralFeature xsi:type="uml:Property" href="pembayaran.uml#_oe_dbdirs"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
