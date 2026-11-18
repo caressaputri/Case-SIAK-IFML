@@ -10,7 +10,7 @@ const pengisianIRSRoutes = [
   }	
 ,
 { 
-    path: "",
+    path: "/irs/ringkasan",
     element: <TableRingkasanPage />,
   }	
 

@@ -14,7 +14,8 @@ const GlobalRoutes = () => {
 	...userRoutes,
 	...roleRoutes,
 	...homeRoutes, 
-	...tagihanRoutes, 
+	...tagihanRoutes,
+	...pengisianIRSRoutes, 
   ])
   return router
 }
