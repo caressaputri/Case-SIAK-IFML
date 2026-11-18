@@ -48,13 +48,13 @@ useEffect(() => {
 			<Layouts.ViewContainerButtonLayout>
 			  	<Link to={`/tagihan/tambah
 			  	`}>
-			  		<Button id="xEvTambahTag" className="p-2" variant="primary">
+			  		<Button id="_FUoLHj8vEfGp8EDN64XzOZ" className="p-2" variant="primary">
 			  		  Tambah Tagihan
 			  		</Button>
 			  	</Link>
 			  	<Link to={`/pembayaran
 			  	`}>
-			  		<Button id="xEvDaftarPemb" className="p-2" variant="primary">
+			  		<Button id="_fEjMLYxEEfGp8EDN64XzOZ" className="p-2" variant="primary">
 			  		  Daftar Pembayaran
 			  		</Button>
 			  	</Link>

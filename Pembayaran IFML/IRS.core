@@ -2,237 +2,34 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_cT9DEOGpEfGIXdw6TcAYcQ">
   <interactionFlowModel id="_7Jy1MOGxEfGIXdw6TcAYcQ">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_7J3GoOGxEfGIXdw6TcAYcQ" name="Pengisian IRS">
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="__XBDkOGxEfGIXdw6TcAYcQ" name="Table Kelas Page">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="__XBDkOGxEfGIXdw6TcAYcQ" name="Table Mata Kuliah Page">
         <annotations text="/irs"/>
-        <viewElementEvents id="yBtnIsiIRS" name="Isi IRS">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yBtnIsiIRS_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
-          </outInteractionFlows>
-        </viewElementEvents>
-        <viewElementEvents id="yBtnIRSSaya" name="IRS Saya">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yBtnIRSSaya_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
-          </outInteractionFlows>
-        </viewElementEvents>
-        <viewElementEvents id="yBtnKelasDiambil" name="Kelas Diambil">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yBtnKelasDiambil_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8">
-          </outInteractionFlows>
-        </viewElementEvents>
-        <viewElements xsi:type="ext:List" id="_iaOSMOGzEfGIXdw6TcAYcQ" name="Table Kelas">
-          <viewComponentParts xsi:type="core:DataBinding" id="_jsfyYOGzEfGIXdw6TcAYcQ" name="List Kelas" uniformResourceIdentifier="call/kelas/list">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLK1" name="Nama Kelas" featureConcept="//@domainModel/@domainElements.84"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLK2" name="Kapasitas" featureConcept="//@domainModel/@domainElements.85"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLK3" name="id" featureConcept="//@domainModel/@domainElements.83"/>
+        <viewElements xsi:type="ext:List" id="_iaOSMOGzEfGIXdw6TcAYcQ" name="Table Mata Kuliah">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_493BwOG0EfGIXdw6TcAYcQ" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UikXIOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_jsfyYOGzEfGIXdw6TcAYcQ" name="List Mata Kuliah" uniformResourceIdentifier="call/kelas/list">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Lt_8cOG0EfGIXdw6TcAYcQ" name="Nama Kelas" featureConcept="//@domainModel/@domainElements.84"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_V7cn4OG0EfGIXdw6TcAYcQ" name="Kapasitas" featureConcept="//@domainModel/@domainElements.85"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_LCoOwOG1EfGIXdw6TcAYcQ" name="Table IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.1/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7/@actionEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_LCoOwOG1EfGIXdw6TcAYcQ" name="Table Ringkasan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/irs/ringkasan"/>
-        <viewElements xsi:type="ext:List" id="_Zx5qIOG2EfGIXdw6TcAYcQ" name="Table IRS">
-          <viewElementEvents id="yEvDtlIRS" name="Detail">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavDtlIRS" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
-              <parameterBindingGroup id="yNavDtlIRS_g">
-                <parameterBindings id="yNavDtlIRS_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@parameters.0"/>
-              </parameterBindingGroup>
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="yDbListIRS" name="List IRS" uniformResourceIdentifier="call/pengisianrencanastudi/list">
-            <parameters id="yDbListIRS_p" name="id" direction="out"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLI1" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLI2" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLI3" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLI4" name="Akhir" featureConcept="//@domainModel/@domainElements.66"/>
+        <viewElements xsi:type="ext:List" id="_Zx5qIOG2EfGIXdw6TcAYcQ" name="Table Ringkasan">
+          <viewComponentParts xsi:type="core:DataBinding" id="_cptkwOG2EfGIXdw6TcAYcQ" name="List Ringkasan" uniformResourceIdentifier="call/pengisianrencanastudi/list">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_nGOm8OG2EfGIXdw6TcAYcQ" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_y3nxYOG2EfGIXdw6TcAYcQ" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_5w-14OG2EfGIXdw6TcAYcQ" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Poq64OG3EfGIXdw6TcAYcQ" name="Akhir" featureConcept="//@domainModel/@domainElements.66"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_jbdv8OG3EfGIXdw6TcAYcQ" name="Alasan Pembatalan" featureConcept="//@domainModel/@domainElements.67"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgDtlIRS" name="Detail IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/:id"/>
-        <viewElements xsi:type="ext:Details" id="yDtlIRS" name="Detail IRS">
-          <parameters id="yDtlIRS_p" name="id" direction="in"/>
-          <viewElementEvents id="yEvUbahIRS" name="Ubah">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavUbahIRS" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
-              <parameterBindingGroup id="yNavUbahIRS_g">
-                <parameterBindings id="yNavUbahIRS_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0"/>
-              </parameterBindingGroup>
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewElementEvents id="yEvHapusIRS" name="Hapus">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavHapusIRS" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7">
-              <parameterBindingGroup id="yNavHapusIRS_g">
-                <parameterBindings id="yNavHapusIRS_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7/@parameters.0"/>
-              </parameterBindingGroup>
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="yDbDtlIRS" name="Detail IRS" uniformResourceIdentifier="call/pengisianrencanastudi/detail">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI1" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI2" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI3" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI4" name="Akhir" featureConcept="//@domainModel/@domainElements.66"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI5" name="Alasan Pembatalan" featureConcept="//@domainModel/@domainElements.67"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI6" name="Semester" featureConcept="//@domainModel/@domainElements.69"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDI7" name="id" featureConcept="//@domainModel/@domainElements.62"/>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgAddIRS" name="Add IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/tambah"/>
-        <viewElements xsi:type="ext:Form" id="yFormAddIRS" name="Add IRS">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_493BwOG0EfGIXdw6TcAYcQ" name="Simpan">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UikXIOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI1" name="Status">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI1_s" name="status">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI2" name="Total SKS">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI2_s" name="totalSks">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI3" name="Mulai (YYYY-MM-DD)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI3_s" name="mulai">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI4" name="Akhir (YYYY-MM-DD)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI4_s" name="akhir">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI5" name="Mahasiswa (id)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI5_s" name="mahasiswaimpl">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAI6" name="Semester (id)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAI6_s" name="semesterimpl">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
-        <actionEvents id="_h0n4gOG4EfGIXdw6TcAYcQ_e">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_h0n4gOG4EfGIXdw6TcAYcQ_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
-          </outInteractionFlows>
-        </actionEvents>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgEditIRS" name="Edit IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/ubah"/>
-        <viewElements xsi:type="ext:Form" id="yFormEditIRS" name="Edit IRS">
-          <parameters id="yFormEditIRS_p" name="id" direction="inout"/>
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="yEvUpdIRS" name="Simpan">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavUpdIRS" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6">
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="yDbEditIRS" name="Data IRS" uniformResourceIdentifier="call/pengisianrencanastudi/detail"/>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFEI1" name="Status">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFEI1_s" name="status">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFEI2" name="Total SKS">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFEI2_s" name="totalSks">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFEI3" name="Alasan Pembatalan">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFEI3_s" name="alasanPembatalan">
-            </subViewComponentParts>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="yIRSUpd" name="Update Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="PUT"/>
-        <actionEvents id="yIRSUpd_e">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yIRSUpd_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
-          </outInteractionFlows>
-        </actionEvents>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="yIRSDel" name="Delete Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
-        <annotations text="DELETE"/>
-        <parameters id="yIRSDel_p" name="id" direction="in"/>
-        <actionEvents id="yIRSDel_e">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yIRSDel_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
-          </outInteractionFlows>
-        </actionEvents>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgTblKM" name="Table Kelas Diambil Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.2/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.12/@actionEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/kelas"/>
-        <viewElementEvents id="yBtnAmbil" name="Ambil Kelas">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yBtnAmbil_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9">
-          </outInteractionFlows>
-        </viewElementEvents>
-        <viewElements xsi:type="ext:List" id="yListKM" name="Table Pengambilan Kelas">
-          <viewElementEvents id="yEvDtlKM" name="Detail">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavDtlKM" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11">
-              <parameterBindingGroup id="yNavDtlKM_g">
-                <parameterBindings id="yNavDtlKM_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11/@viewElements.0/@parameters.0"/>
-              </parameterBindingGroup>
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="yDbListKM" name="List Kelas Diambil" uniformResourceIdentifier="call/kelasmahasiswa/list">
-            <parameters id="yDbListKM_p" name="id" direction="out"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yLM1" name="id" featureConcept="//@domainModel/@domainElements.78"/>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgAddKM" name="Ambil Kelas Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/kelas/tambah"/>
-        <viewElements xsi:type="ext:Form" id="yFormAddKM" name="Ambil Kelas">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="yEvSimpanKM" name="Simpan">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavSimpanKM" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10">
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAK1" name="Kelas (id)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAK1_s" name="kelasimpl">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAK2" name="IRS (id)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAK2_s" name="pengisianrencanastudiimpl">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="yFAK3" name="Tanggal Pengisian (YYYY-MM-DD)">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="yFAK3_s" name="tanggalPengisian">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="yKMSave" name="Save Kelas Mahasiswa" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="POST"/>
-        <actionEvents id="yKMSave_e">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yKMSave_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8">
-          </outInteractionFlows>
-        </actionEvents>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="yPgDtlKM" name="Detail Kelas Diambil Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/irs/kelas/:id"/>
-        <viewElements xsi:type="ext:Details" id="yDtlKM" name="Detail Kelas Diambil">
-          <parameters id="yDtlKM_p" name="id" direction="in"/>
-          <viewElementEvents id="yEvHapusKM" name="Hapus">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="yNavHapusKM" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.12">
-              <parameterBindingGroup id="yNavHapusKM_g">
-                <parameterBindings id="yNavHapusKM_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.12/@parameters.0"/>
-              </parameterBindingGroup>
-            </outInteractionFlows>
-          </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="yDbDtlKM" name="Detail Kelas Diambil" uniformResourceIdentifier="call/kelasmahasiswa/detail">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDK1" name="Kelas" featureConcept="//@domainModel/@domainElements.79"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDK2" name="IRS" featureConcept="//@domainModel/@domainElements.80"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="yDK3" name="id" featureConcept="//@domainModel/@domainElements.78"/>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="yKMDel" name="Delete Kelas Mahasiswa" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="DELETE"/>
-        <parameters id="yKMDel_p" name="id" direction="in"/>
-        <actionEvents id="yKMDel_e">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="yKMDel_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8">
-          </outInteractionFlows>
+        <actionEvents id="_ZdaggOG5EfGIXdw6TcAYcQ">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_eKqSwOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>

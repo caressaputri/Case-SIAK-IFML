@@ -48,12 +48,6 @@ const DetailTagihan = ({ data }) => {
                   featureName: "jatuhTempo",
                 }
         ,        {
-                  id: "semester",
-                  condition: "",
-                  label: "Semester",
-                  featureName: "semesterimpl",
-                }
-        ,        {
                   id: "id",
                   condition: "",
                   label: "id",
@@ -63,7 +57,7 @@ const DetailTagihan = ({ data }) => {
       ]}
       itemsEvents={[
           <Button
-            id="xEvUbahTag"
+            id="_-2djTerZEfGp8EDN64XzOZ"
             variant="secondary"
             onClick={() => ubah()}
           >
@@ -71,7 +65,7 @@ const DetailTagihan = ({ data }) => {
           </Button>
         ,
           <Button
-          id="xEvHapusTag"
+          id="_np_tDwaUEfGp8EDN64XzOZ"
           variant="tertiary"
           onClick={() => hapus()}
         >

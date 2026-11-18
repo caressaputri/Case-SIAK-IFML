@@ -7,7 +7,7 @@ import { useParams } from "@/commons/hooks/useParams"
 import { HeaderContext } from "@/commons/components"
 import { useNavigate } from "react-router";
 import { useAuth } from '@/commons/auth';
-import MataTableForm from "../components/MataTableForm";
+import MataTable from "../components/MataTable";
 import getListMataKuliah from '../services/getListMataKuliah'
 
 const TableMataKuliahPage = props => {
@@ -24,9 +24,6 @@ const TableMataKuliahPage = props => {
 
 
 const [listMataKuliah, setListMataKuliah] = useState()
-	
-	
-	const [edited, setEdited] = useState([])
 
 useEffect(() => {
 		
@@ -42,22 +39,6 @@ useEffect(() => {
 		fetchData()
   	}, [])
 
-	useEffect(() => {
-	  if (listMataKuliah) {
-	    setEdited(listMataKuliah)
-	  }
-	}, [listMataKuliah])
-	
-	const handleChange = (updatedItems) => {
-		setEdited(
-			(prevData) =>
-			prevData.map((p, idx) => ({
-				...p,
-				...updatedItems[idx],
-			}))
-		);
-	};
-
   return (
 	<Layouts.ViewContainerLayout
 		buttons={
@@ -66,17 +47,17 @@ useEffect(() => {
 			</>
 		}
 	>
-<Layouts.FormContainerLayout
-		isLoading={isLoading.tableMataKuliah}
-	>
-		<MataTableForm
-			listMataKuliah={listMataKuliah}
-			edited={edited}
-        	handleChange={handleChange}
-			isLoading={isLoading.tableMataKuliah}
-			
-		/>
-	</Layouts.FormContainerLayout>
+<Layouts.ListContainerTableLayout
+	title={"Table Mata Kuliah"}
+	singularName={"Mata"}
+	items={[listMataKuliah]}
+	isLoading={isLoading.tableMataKuliah}
+>
+	<MataTable
+		listMataKuliah={listMataKuliah}
+		
+	/>
+</Layouts.ListContainerTableLayout>
 
 	</Layouts.ViewContainerLayout>
   )

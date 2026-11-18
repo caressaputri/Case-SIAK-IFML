@@ -98,11 +98,11 @@ const FormAddTagihan = ({
 	        key="jatuhTempo"
 	        name="jatuhTempo"
 	        control={control}
-	        rules={{ required: "Harap masukkan jatuh tempo (yyyy-mm-dd)" }} 
+	        rules={{ required: "Harap masukkan jatuh tempo" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Jatuh Tempo (YYYY-MM-DD)"
-	          placeholder="Masukkan jatuh tempo (yyyy-mm-dd)"
+	          label="Jatuh Tempo"
+	          placeholder="Masukkan jatuh tempo"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -166,11 +166,11 @@ const FormAddTagihan = ({
 	        key="mahasiswaimpl"
 	        name="mahasiswaimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan mahasiswa (id)" }} 
+	        rules={{ required: "Harap masukkan mahasiswa" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Mahasiswa (id)"
-	          placeholder="Masukkan mahasiswa (id)"
+	          label="Mahasiswa"
+	          placeholder="Masukkan mahasiswa"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -183,11 +183,11 @@ const FormAddTagihan = ({
 	        key="semesterimpl"
 	        name="semesterimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan semester (id)" }} 
+	        rules={{ required: "Harap masukkan semester" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Semester (id)"
-	          placeholder="Masukkan semester (id)"
+	          label="Semester"
+	          placeholder="Masukkan semester"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -200,7 +200,7 @@ const FormAddTagihan = ({
 		  ]}
 	
 		  itemsEvents={[
-		    <Button id="xEvSimpanTag" key="Simpan" type="submit" variant="primary">Simpan</Button>
+		    <Button id="_Qtc4pjO_EfGp8EDN64XzOZ" key="Simpan" type="submit" variant="primary">Simpan</Button>
 	    ]}
 	  />
 	    

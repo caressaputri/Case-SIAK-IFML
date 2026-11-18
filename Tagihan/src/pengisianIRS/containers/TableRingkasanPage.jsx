@@ -7,13 +7,13 @@ import { useParams } from "@/commons/hooks/useParams"
 import { HeaderContext } from "@/commons/components"
 import { useNavigate } from "react-router";
 import { useAuth } from '@/commons/auth';
-import Card from "../components/invalidCard";
-import getDataBinding from '../services/getDataBinding'
+import RingkasanTable from "../components/RingkasanTable";
+import getListRingkasan from '../services/getListRingkasan'
 
 const TableRingkasanPage = props => {
   const { checkPermission } = useAuth();
   const [isLoading, setIsLoading] = useState({
-	list: false,
+	tableRingkasan: false,
 
   });
   const { setTitle } = useContext(HeaderContext);
@@ -23,17 +23,17 @@ const TableRingkasanPage = props => {
   }, []);
 
 
-const [dataBinding, setDataBinding] = useState()
+const [listRingkasan, setListRingkasan] = useState()
 
 useEffect(() => {
 		
 		const fetchData = async () => {
 			try {
-				setIsLoading(prev => ({...prev, list: true}))
-				const { data: dataBinding } = await getDataBinding()
-				setDataBinding(dataBinding.data)
+				setIsLoading(prev => ({...prev, tableRingkasan: true}))
+				const { data: listRingkasan } = await getListRingkasan()
+				setListRingkasan(listRingkasan.data)
 			} finally {
-				setIsLoading(prev => ({...prev, list: false}))
+				setIsLoading(prev => ({...prev, tableRingkasan: false}))
 			}
 		}
 		fetchData()
@@ -47,14 +47,17 @@ useEffect(() => {
 			</>
 		}
 	>
-<Layouts.ListContainerCardLayout
-	title={"List"}
-	singularName={""}
-	items={[dataBinding]}
-	isLoading={isLoading.list}
+<Layouts.ListContainerTableLayout
+	title={"Table Ringkasan"}
+	singularName={"Ringkasan"}
+	items={[listRingkasan]}
+	isLoading={isLoading.tableRingkasan}
 >
-	<Card dataBinding={dataBinding} />
-</Layouts.ListContainerCardLayout>
+	<RingkasanTable
+		listRingkasan={listRingkasan}
+		
+	/>
+</Layouts.ListContainerTableLayout>
 
 	</Layouts.ViewContainerLayout>
   )

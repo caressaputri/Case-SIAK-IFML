@@ -8,8 +8,6 @@ import * as Layouts from "@/commons/layouts";
 const MataTable = ({ listMataKuliah,
 		 
 
-		handleChange,
-		itemId,
 	}) => {
   const { checkPermission } = useAuth();
   
@@ -17,34 +15,11 @@ const MataTable = ({ listMataKuliah,
   <>
     <Layouts.ListComponentTableLayout
   	  items={[listMataKuliah]}
-  	  itemId={itemId}
-  	  handleChange={handleChange}
   	  itemsAttrs={[
           {
-            id: "id",
+            id: "namaKelas",
             condition: "",
-            label: "id",
-            featureName: "id",
-            editable: false
-          }
-  ,        {
-            id: "selectionField",
-            condition: "",
-            label: "Selection Field",
-            featureName: "",
-            editable: true
-          }
-  ,        {
-            id: "select",
-            condition: "",
-            label: "Select",
-            featureName: "",
-            editable: true
-          }
-  ,        {
-            id: "namaMataKuliah",
-            condition: "",
-            label: "Nama Mata Kuliah",
+            label: "Nama Kelas",
             featureName: "nama",
             editable: false
           }
@@ -53,20 +28,6 @@ const MataTable = ({ listMataKuliah,
             condition: "",
             label: "Kapasitas",
             featureName: "kapasitas",
-            editable: false
-          }
-  ,        {
-            id: "mataKuliah",
-            condition: "",
-            label: "Mata Kuliah",
-            featureName: "matakuliahimpl",
-            editable: false
-          }
-  ,        {
-            id: "semester",
-            condition: "",
-            label: "Semester",
-            featureName: "semesterimpl",
             editable: false
           }
   ]}

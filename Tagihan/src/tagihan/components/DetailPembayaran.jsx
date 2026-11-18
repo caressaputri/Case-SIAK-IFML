@@ -53,17 +53,11 @@ const DetailPembayaran = ({ data }) => {
                   label: "Metode Pembayaran",
                   featureName: "metodePembayaran",
                 }
-        ,        {
-                  id: "id",
-                  condition: "",
-                  label: "id",
-                  featureName: "id",
-                }
         
       ]}
       itemsEvents={[
           <Button
-            id="xEvUbahPemb"
+            id="_fR903VDAEfGp8EDN64XzOZ"
             variant="secondary"
             onClick={() => ubah()}
           >
@@ -71,7 +65,7 @@ const DetailPembayaran = ({ data }) => {
           </Button>
         ,
           <Button
-          id="xEvHapusPemb"
+          id="_bJm4-Zy0EfGp8EDN64XzOZ"
           variant="tertiary"
           onClick={() => hapus()}
         >
