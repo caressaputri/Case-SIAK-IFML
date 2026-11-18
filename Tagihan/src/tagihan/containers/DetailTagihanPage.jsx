@@ -10,6 +10,7 @@ import DetailTagihan from '../components/DetailTagihan'
 import getDetailTagihan from '../services/getDetailTagihan'
 
 const DetailTagihanPage = props => {
+  const { id } = useParams()
   const [isLoading, setIsLoading] = useState({
 	detailTagihan: false,
 
@@ -40,7 +41,7 @@ useEffect(() => {
 		buttons={
 			<>
 			<Layouts.ViewContainerButtonLayout>
-			  	<Link to={`invalid
+			  	<Link to={`/tagihan/bayar
 			  	`}>
 			  		<Button id="_wAVHENzHEfGG8dLC5rTvHA" className="p-2 w-full" variant="primary">
 			  		  Add Pembayaran

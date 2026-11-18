@@ -11,12 +11,12 @@ const tagihanRoutes = [
   }	
 ,
 { 
-    path: "",
+    path: "/tagihan/bayar",
     element: <AddPembayaranPage />,
   }	
 ,
 { 
-    path: "/tagihan/id_tagihan",
+    path: "/tagihan/:id",
     element: <DetailTagihanPage />,
   }	
 

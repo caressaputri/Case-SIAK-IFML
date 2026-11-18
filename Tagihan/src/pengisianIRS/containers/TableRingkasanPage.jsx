@@ -53,10 +53,7 @@ useEffect(() => {
 	items={[dataBinding]}
 	isLoading={isLoading.list}
 >
-	<invalidCard
-		dataBinding={dataBinding}
-		
-  	/>
+	<Card dataBinding={dataBinding} />
 </Layouts.ListContainerCardLayout>
 
 	</Layouts.ViewContainerLayout>

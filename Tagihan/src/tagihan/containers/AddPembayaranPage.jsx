@@ -19,20 +19,6 @@ const AddPembayaranPage = props => {
     setTitle("Add Pembayaran Page")
   }, []);
 
-
-const [dataBinding, setDataBinding] = useState()
-
-  useEffect(() => {
-    const fetch = async () => {
-	  setIsLoading(prev => ({...prev, addPembayaran: true}))
-      const { data: dataBindingResponse } = await getDataBinding({  })
-
-	  setDataBinding(dataBindingResponse.data)
-	  setIsLoading(prev => ({...prev, addPembayaran: false}))
-    }
-	fetch()
-  }, [])
-
   return (
 	<Layouts.ViewContainerLayout
 		buttons={
@@ -43,16 +29,11 @@ const [dataBinding, setDataBinding] = useState()
 	>
 <Layouts.FormContainerLayout
 		singularName={"Pembayaran"}
-		isLoading={isLoading.addPembayaran}
+		
 	>
-		{dataBinding ? 
-		(<>
-		 <FormAddPembayaran
-			{...{ 
-				dataBinding
-				}}
-		 /> 
-		</>)  : (<></>)}
+		<FormAddPembayaran
+			{...props}
+		/>
 	</Layouts.FormContainerLayout>
 
 	</Layouts.ViewContainerLayout>

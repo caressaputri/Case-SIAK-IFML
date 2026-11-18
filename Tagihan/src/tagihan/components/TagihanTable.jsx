@@ -13,7 +13,7 @@ const TagihanTable = ({ listTagihan,
   const { checkPermission } = useAuth();
   const navigate = useNavigate();
   const detail = async (tagihanItem) => {
-    isMobile() && navigate(`/tagihan/id_tagihan`
+    isMobile() && navigate(`/tagihan/${tagihanItem.id}`
     );
   };
   
@@ -46,12 +46,12 @@ const TagihanTable = ({ listTagihan,
           }
   ]}
         itemsEvents={(tagihanItem) => [
-          <Link to={`/tagihan/id_tagihan`}>
+          <Link to={`/tagihan/${tagihanItem.id}`}>
             <Button
               id="_5oN2ENzBEfGG8dLC5rTvHA"
               size="sm"
               variant=
-                          "secondary"
+                  "primary"
             >
               Detail
             </Button>

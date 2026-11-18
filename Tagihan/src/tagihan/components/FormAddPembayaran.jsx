@@ -22,7 +22,6 @@ import { notifyError, notifySuccess} from "@/commons/utils/toaster";
 import * as Layouts from "@/commons/layouts";
 
 const FormAddPembayaran = ({ 
-	dataBinding
  }) => {
   const { 
     control, 
@@ -40,6 +39,7 @@ const FormAddPembayaran = ({
       ...cleanData,
     })
     .then(({ data: { data } }) => {
+      navigate(`/tagihan`)
   	notifySuccess(`Save Pembayaran berhasil!`);
     })
     .catch((error) => {
@@ -56,29 +56,51 @@ const FormAddPembayaran = ({
 		  onSubmit={handleSubmit(bayar)}
 	
 	    vas={[
-	      <VisualizationAttr
-	        label="No"
-	        content={dataBinding?.id}
-	        
-	      />
-	,
-	      <VisualizationAttr
-	  label="paymentId"
-	  content={dataBinding?.paymentId}
-	  
-	/>
 		  ]}
 	
 		  formFields={[
 	
 	      <Controller
+	        key="paymentId"
+	        name="paymentId"
+	        control={control}
+	        render={({ field, fieldState }) => (
+	        <InputField
+	          label="Nomor Referensi"
+	          placeholder="Masukkan nomor referensi"
+	          fieldState={fieldState}
+	          {...field}
+	          isRequired={false}
+	        />
+	        )}
+	      />
+	
+	,
+	      <Controller
 	        key="amount"
 	        name="amount"
 	        control={control}
+	        rules={{ required: "Harap masukkan amount" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
 	          label="Amount"
 	          placeholder="Masukkan amount"
+	          fieldState={fieldState}
+	          {...field}
+	          isRequired={true}
+	        />
+	        )}
+	      />
+	
+	,
+	      <Controller
+	        key="metodePembayaran"
+	        name="metodePembayaran"
+	        control={control}
+	        render={({ field, fieldState }) => (
+	        <InputField
+	          label="Metode Pembayaran"
+	          placeholder="Masukkan metode pembayaran"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={false}
@@ -91,37 +113,20 @@ const FormAddPembayaran = ({
 	        key="tagihanimpl"
 	        name="tagihanimpl"
 	        control={control}
+	        rules={{ required: "Harap masukkan tagihan" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
 	          label="Tagihan"
 	          placeholder="Masukkan tagihan"
 	          fieldState={fieldState}
 	          {...field}
-	          isRequired={false}
+	          isRequired={true}
 	        />
 	        )}
 	      />
 	
 		  ,
 	
-	
-	      <Controller
-	        key=""
-	        name=""
-	        control={control}
-	        render={({ field, fieldState }) => (
-	        <SelectionField
-	          
-	          label="Metode Pembayaran"
-	          options={dataBinding}
-	          optionLabel="metodePembayaran"
-	          placeholder="Masukkan metode pembayaran"
-	          fieldState={fieldState}
-	          {...field}
-	          isRequired={false}
-	        />
-	        )}
-	      />
 		  ]}
 	
 		  itemsEvents={[
