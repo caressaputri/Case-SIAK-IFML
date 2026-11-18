@@ -37,7 +37,8 @@
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save IRS" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
         <actionEvents id="_ZdaggOG5EfGIXdw6TcAYcQ">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_eKqSwOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </actionEvents>
