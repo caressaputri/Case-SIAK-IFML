@@ -28,7 +28,7 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_zSvTANzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_wgLa4Ny-EfGG8dLC5rTvHA" name="Detail Tagihan">
-          <viewComponentParts xsi:type="core:DataBinding" id="_y4PecNy-EfGG8dLC5rTvHA" name="Detail Tagihan" uniformResourceIdentifier=" call/tagihan/detail">
+          <viewComponentParts xsi:type="core:DataBinding" id="_y4PecNy-EfGG8dLC5rTvHA" name="Detail Tagihan" uniformResourceIdentifier="call/tagihan/detail">
             <parameters id="_-WZ48NzAEfGG8dLC5rTvHA" name="id"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4rzYgNy-EfGG8dLC5rTvHA" name="Jumlah Tagihan" featureConcept="//@domainModel/@domainElements.15">
               <annotations text="isCurrency"/>
@@ -49,11 +49,6 @@
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_nPfZANzGEfGG8dLC5rTvHA" name="Bayar">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_dq5n4NzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SelectionField" id="_Uji3QNzGEfGG8dLC5rTvHA" name="Metode Pembayaran">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_yM9zMNzGEfGG8dLC5rTvHA" name="metodePembayaran">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
           <viewComponentParts xsi:type="core:DataBinding" id="_OcNEQOMWEfGTiK4hjTKvKw" name="Data Binding">
             <subViewComponentParts xsi:type="ext:SelectionField" id="_UiiJUOMWEfGTiK4hjTKvKw" name="Metode Pembayaran">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_bEyVYOMWEfGTiK4hjTKvKw" name="metodePembayaran"/>
