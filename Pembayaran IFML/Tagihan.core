@@ -3,15 +3,22 @@
   <interactionFlowModel id="_moWjENg9EfGG8dLC5rTvHA">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_mpDtsNg9EfGG8dLC5rTvHA" name="Tagihan">
       <inputPorts id="_UPP9cNhAEfGG8dLC5rTvHA" name="Input Port"/>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_r1mEANg9EfGG8dLC5rTvHA" name="Table Tagihan Page">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_r1mEANg9EfGG8dLC5rTvHA" name="Table Tagihan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/tagihan"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="Pembayaran.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="Tagihan.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="xEvTambahTag" name="Tambah Tagihan">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavTambahTag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElementEvents id="xEvDaftarPemb" name="Daftar Pembayaran">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavDaftarPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9">
+          </outInteractionFlows>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_XL0HINg-EfGG8dLC5rTvHA" name="Table Tagihan">
           <viewElementEvents id="_5oN2ENzBEfGG8dLC5rTvHA" name="Detail">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_LNUEgNzCEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
-              <parameterBindingGroup id="_OGwW0NzCEfGG8dLC5rTvHA">
-                <parameterBindings id="_PbDtlIdNzCEfGG8dLC5rTvHA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              <parameterBindingGroup id="_LNUEgNzCEfGG8dLC5rTvHA_g">
+                <parameterBindings id="_LNUEgNzCEfGG8dLC5rTvHA_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
@@ -28,11 +35,26 @@
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_i7QdUNy-EfGG8dLC5rTvHA" name="Detail Tagihan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/tagihan/:id"/>
         <viewElementEvents id="_wAVHENzHEfGG8dLC5rTvHA" name="Add Pembayaran">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_zSvTANzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_zSvTANzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+          </outInteractionFlows>
         </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_wgLa4Ny-EfGG8dLC5rTvHA" name="Detail Tagihan">
+          <parameters id="_-WZ48NzAEfGG8dLC5rTvHA" name="id" direction="in"/>
+          <viewElementEvents id="xEvUbahTag" name="Ubah">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavUbahTag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6">
+              <parameterBindingGroup id="xNavUbahTag_g">
+                <parameterBindings id="xNavUbahTag_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="xEvHapusTag" name="Hapus">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavHapusTag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8">
+              <parameterBindingGroup id="xNavHapusTag_g">
+                <parameterBindings id="xNavHapusTag_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.8/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_y4PecNy-EfGG8dLC5rTvHA" name="Detail Tagihan" uniformResourceIdentifier="call/tagihan/detail">
-            <parameters id="_-WZ48NzAEfGG8dLC5rTvHA" name="id"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4rzYgNy-EfGG8dLC5rTvHA" name="Jumlah Tagihan" featureConcept="//@domainModel/@domainElements.15">
               <annotations text="isCurrency"/>
             </subViewComponentParts>
@@ -47,25 +69,28 @@
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_ipODYNzEEfGG8dLC5rTvHA" name="Add Pembayaran Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_ipODYNzEEfGG8dLC5rTvHA" name="Add Pembayaran Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/tagihan/bayar"/>
         <viewElements xsi:type="ext:Form" id="_p0rIANzFEfGG8dLC5rTvHA" name="Add Pembayaran">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_nPfZANzGEfGG8dLC5rTvHA" name="Bayar">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_dq5n4NzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_dq5n4NzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+            </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_4Nph8OMWEfGTiK4hjTKvKw" name="Nomor Referensi">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_PayIdSlotNzGEfGG8dLC5rTvHA" name="paymentId"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4Nph8OMWEfGTiK4hjTKvKw_s" name="paymentId">
+            </subViewComponentParts>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_d--40OMaEfGTiK4hjTKvKw" name="Amount">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_qJ4vcOMaEfGTiK4hjTKvKw" name="amount">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_d--40OMaEfGTiK4hjTKvKw_s" name="amount">
               <annotations text="Required"/>
             </subViewComponentParts>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_UiiJUOMWEfGTiK4hjTKvKw" name="Metode Pembayaran">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_bEyVYOMWEfGTiK4hjTKvKw" name="metodePembayaran"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_UiiJUOMWEfGTiK4hjTKvKw_s" name="metodePembayaran">
+            </subViewComponentParts>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_00AIwOMaEfGTiK4hjTKvKw" name="Tagihan">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_4H1RAOMaEfGTiK4hjTKvKw" name="tagihanimpl">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_00AIwOMaEfGTiK4hjTKvKw_s" name="tagihanimpl">
               <annotations text="Required"/>
             </subViewComponentParts>
           </viewComponentParts>
@@ -74,7 +99,212 @@
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="_J-7zkNzHEfGG8dLC5rTvHA" name="Save Pembayaran" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_hZ63UNzHEfGG8dLC5rTvHA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qiIZANzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qiIZANzHEfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="xPgAddTag" name="Add Tagihan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/tagihan/tambah"/>
+        <viewElements xsi:type="ext:Form" id="xFormAddTag" name="Add Tagihan">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="xEvSimpanTag" name="Simpan">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavSimpanTag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT1" name="Jumlah Tagihan">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT1_s" name="jumlahTagihan">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT2" name="Status Pembayaran">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT2_s" name="statusPembayaran">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT3" name="Jatuh Tempo (YYYY-MM-DD)">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT3_s" name="jatuhTempo">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT4" name="Golongan UKT">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT4_s" name="golonganUkt">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT5" name="Skema Pembayaran">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT5_s" name="skemaPembayaran">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT6" name="Jumlah Terbayar">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT6_s" name="jumlahTerbayar">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT7" name="Mahasiswa (id)">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT7_s" name="mahasiswaimpl">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFAT8" name="Semester (id)">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFAT8_s" name="semesterimpl">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="xTagSave" name="Save Tagihan" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="xTagSave_e">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xTagSave_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="xPgEditTag" name="Edit Tagihan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/tagihan/ubah"/>
+        <viewElements xsi:type="ext:Form" id="xFormEditTag" name="Edit Tagihan">
+          <parameters id="xFormEditTag_p" name="id" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="xEvUpdTag" name="Simpan">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavUpdTag" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.7">
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="xDbEditTag" name="Data Tagihan" uniformResourceIdentifier="call/tagihan/detail"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFET1" name="Jumlah Tagihan">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFET1_s" name="jumlahTagihan">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFET2" name="Status Pembayaran">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFET2_s" name="statusPembayaran">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFET3" name="Golongan UKT">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFET3_s" name="golonganUkt">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFET4" name="Skema Pembayaran">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFET4_s" name="skemaPembayaran">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFET5" name="Jumlah Terbayar">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFET5_s" name="jumlahTerbayar">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="xTagUpd" name="Update Tagihan" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="xTagUpd_e">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xTagUpd_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="xTagDel" name="Delete Tagihan" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="xTagDel_p" name="id" direction="in"/>
+        <actionEvents id="xTagDel_e">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xTagDel_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="xPgTblPemb" name="Table Pembayaran Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.1/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.12/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.13/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/pembayaran"/>
+        <viewElementEvents id="xEvTambahPemb" name="Tambah Pembayaran">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavTambahPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="xListPemb" name="Table Pembayaran">
+          <viewElementEvents id="xEvDetailPemb" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavDetailPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10">
+              <parameterBindingGroup id="xNavDetailPemb_g">
+                <parameterBindings id="xNavDetailPemb_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="xDbListPemb" name="List Pembayaran" uniformResourceIdentifier="call/pembayaran/list">
+            <parameters id="xDbListPemb_p" name="id" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xLP1" name="Nomor Referensi" featureConcept="//@domainModel/@domainElements.2"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xLP2" name="Amount" featureConcept="//@domainModel/@domainElements.3"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xLP3" name="Status" featureConcept="//@domainModel/@domainElements.4"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xLP4" name="Metode Pembayaran" featureConcept="//@domainModel/@domainElements.5"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="xPgDtlPemb" name="Detail Pembayaran Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/pembayaran/:id"/>
+        <viewElements xsi:type="ext:Details" id="xDtlPemb" name="Detail Pembayaran">
+          <parameters id="xDtlPemb_p" name="id" direction="in"/>
+          <viewElementEvents id="xEvUbahPemb" name="Ubah">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavUbahPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11">
+              <parameterBindingGroup id="xNavUbahPemb_g">
+                <parameterBindings id="xNavUbahPemb_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="xEvHapusPemb" name="Hapus">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavHapusPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.13">
+              <parameterBindingGroup id="xNavHapusPemb_g">
+                <parameterBindings id="xNavHapusPemb_b" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.13/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="xDbDtlPemb" name="Detail Pembayaran" uniformResourceIdentifier="call/pembayaran/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xDP1" name="Nomor Referensi" featureConcept="//@domainModel/@domainElements.2"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xDP2" name="Amount" featureConcept="//@domainModel/@domainElements.3"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xDP3" name="Status" featureConcept="//@domainModel/@domainElements.4"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xDP4" name="Metode Pembayaran" featureConcept="//@domainModel/@domainElements.5"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="xDP5" name="id" featureConcept="//@domainModel/@domainElements.1"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="xPgEditPemb" name="Edit Pembayaran Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/pembayaran/ubah"/>
+        <viewElements xsi:type="ext:Form" id="xFormEditPemb" name="Edit Pembayaran">
+          <parameters id="xFormEditPemb_p" name="id" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="xEvUpdPemb" name="Simpan">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="xNavUpdPemb" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.12">
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="xDbEditPemb" name="Data Pembayaran" uniformResourceIdentifier="call/pembayaran/detail"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFEP1" name="Nomor Referensi">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFEP1_s" name="paymentId">
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFEP2" name="Amount">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFEP2_s" name="amount">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFEP3" name="Status">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFEP3_s" name="status">
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFEP4" name="Metode Pembayaran">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFEP4_s" name="metodePembayaran">
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="xFEP5" name="Sumber Status">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="xFEP5_s" name="sumberStatus">
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="xPembUpd" name="Update Pembayaran" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.11/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="xPembUpd_e">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xPembUpd_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9">
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="xPembDel" name="Delete Pembayaran" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.10/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="xPembDel_p" name="id" direction="in"/>
+        <actionEvents id="xPembDel_e">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="xPembDel_n" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.9">
+          </outInteractionFlows>
         </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
