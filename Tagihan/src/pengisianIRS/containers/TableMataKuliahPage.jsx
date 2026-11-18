@@ -71,8 +71,7 @@ useEffect(() => {
 	>
 		<MataTableForm
 			listMataKuliah={listMataKuliah}
-			edited={[edited]}
-			itemId={itemId}
+			edited={edited}
         	handleChange={handleChange}
 			isLoading={isLoading.tableMataKuliah}
 			
