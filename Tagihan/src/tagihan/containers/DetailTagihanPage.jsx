@@ -27,7 +27,7 @@ useEffect(() => {
 		const fetchData = async () => {
 			try {
 				setIsLoading(prev => ({...prev, detailTagihan: true}))
-				const { data: detailTagihan } = await getDetailTagihan({  })
+				const { data: detailTagihan } = await getDetailTagihan({ id })
 				setDetailTagihan(detailTagihan.data)
 			} finally {
 				setIsLoading(prev => ({...prev, detailTagihan: false}))

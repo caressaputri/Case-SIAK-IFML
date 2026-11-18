@@ -1,0 +1,101 @@
+
+import React, { useContext } from 'react';
+import { useNavigate, Link } from "react-router";
+import { useAuth } from '@/commons/auth';
+import { Button, Detail, VisualizationAttr, Modal, Spinner } from '@/commons/components';
+
+import deletePengisianRencanaStudi from '../services/deletePengisianRencanaStudi'
+import * as Layouts from "@/commons/layouts";
+
+const DetailIRS = ({ data }) => {
+    const { checkPermission } = useAuth();
+    const navigate = useNavigate();
+    const ubah = async () => {
+      navigate(
+        '/irs/ubah?'
+        + `id=${data.id}`
+        
+      );
+    };
+    const hapus = async () => {
+      await deletePengisianRencanaStudi({
+        id: data.id,
+      });
+  	navigate('/irs/ringkasan');
+    }
+  
+  
+  return (
+    <Layouts.DetailComponentLayout
+      item={data}
+      itemsAttrs={[
+                {
+                  id: "status",
+                  condition: "",
+                  label: "Status",
+                  featureName: "status",
+                }
+        ,        {
+                  id: "totalSKS",
+                  condition: "",
+                  label: "Total SKS",
+                  featureName: "totalSks",
+                }
+        ,        {
+                  id: "mulai",
+                  condition: "",
+                  label: "Mulai",
+                  featureName: "mulai",
+                }
+        ,        {
+                  id: "akhir",
+                  condition: "",
+                  label: "Akhir",
+                  featureName: "akhir",
+                }
+        ,        {
+                  id: "alasanPembatalan",
+                  condition: "",
+                  label: "Alasan Pembatalan",
+                  featureName: "alasanPembatalan",
+                }
+        ,        {
+                  id: "semester",
+                  condition: "",
+                  label: "Semester",
+                  featureName: "semesterimpl",
+                }
+        ,        {
+                  id: "id",
+                  condition: "",
+                  label: "id",
+                  featureName: "id",
+                }
+        
+      ]}
+      itemsEvents={[
+          <Button
+            id="yEvUbahIRS"
+            variant="secondary"
+            onClick={() => ubah()}
+          >
+            Ubah
+          </Button>
+        ,
+          <Button
+          id="yEvHapusIRS"
+          variant="tertiary"
+          onClick={() => hapus()}
+        >
+          Hapus
+        </Button>
+        
+      ]}
+      itemsModals={[
+        
+      ]}
+    />
+  );
+};
+
+export default DetailIRS;

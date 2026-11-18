@@ -25,6 +25,8 @@ const TableTagihanPage = props => {
 
 const [listTagihan, setListTagihan] = useState()
 
+
+
 useEffect(() => {
 		
 		const fetchData = async () => {
@@ -43,7 +45,21 @@ useEffect(() => {
 	<Layouts.ViewContainerLayout
 		buttons={
 			<>
-			<></>
+			<Layouts.ViewContainerButtonLayout>
+			  	<Link to={`/tagihan/tambah
+			  	`}>
+			  		<Button id="xEvTambahTag" className="p-2" variant="primary">
+			  		  Tambah Tagihan
+			  		</Button>
+			  	</Link>
+			  	<Link to={`/pembayaran
+			  	`}>
+			  		<Button id="xEvDaftarPemb" className="p-2" variant="primary">
+			  		  Daftar Pembayaran
+			  		</Button>
+			  	</Link>
+			
+			  </Layouts.ViewContainerButtonLayout>
 			</>
 		}
 	>
