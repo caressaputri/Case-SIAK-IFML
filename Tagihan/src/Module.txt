@@ -19,3 +19,41 @@ Tagihan
 
 
 
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+	tes1 Add Pembayaran Page
+
+
+	
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+

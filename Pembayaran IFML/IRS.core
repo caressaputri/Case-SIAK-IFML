@@ -4,7 +4,7 @@
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_7J3GoOGxEfGIXdw6TcAYcQ" name="Pengisian IRS">
       <annotations text="/irs"/>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="__XBDkOGxEfGIXdw6TcAYcQ" name="Table Mata Kuliah Page">
-        <annotations text="POST"/>
+        <annotations text="/irs"/>
         <viewElements xsi:type="ext:List" id="_iaOSMOGzEfGIXdw6TcAYcQ" name="Table Mata Kuliah">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_493BwOG0EfGIXdw6TcAYcQ" name="Save">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_UikXIOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>

@@ -45,3 +45,19 @@ export const settingsMenu = [
 ]
 
 export default menus;
+
+addMenu({
+	id: '_5lM8sNg_EfGG8dLC5rTvHA',
+	route: '/tagihan',
+    label: 'Tagihan',
+    permission: '',
+	subMenus: [],
+})
+
+addMenu({
+	id: '_8tqcYOMJEfGTiK4hjTKvKw',
+	route: '/irs',
+    label: 'IRS',
+    permission: '',
+	subMenus: [],
+})

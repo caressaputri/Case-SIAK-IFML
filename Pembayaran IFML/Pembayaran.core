@@ -15,10 +15,11 @@
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_8tqcYOMJEfGTiK4hjTKvKw" name="IRS">
       <annotations text="IRS"/>
       <viewElementEvents id="_MqDnoOMKEfGTiK4hjTKvKw" name="IRS">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_a4zlUOMKEfGTiK4hjTKvKw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_a4zlUOMKEfGTiK4hjTKvKw">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="IRS.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="dop-extension:ModifiedViewContainer" id="_XvC_EOMKEfGTiK4hjTKvKw" name="IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
   </interactionFlowModel>
   <domainModel id="_au2a8Ng8EfGG8dLC5rTvHA">
     <domainElements xsi:type="core:UMLDomainConcept" id="_avde8Ng8EfGG8dLC5rTvHA" name="PembayaranImpl">
