@@ -6,8 +6,6 @@ import { useAuth } from '@/commons/auth';
 import { Button, Modal, Spinner } from '@/commons/components';
 import * as Layouts from "@/commons/layouts";
 const MataTable = ({ listMataKuliah,
-		 
-
 	}) => {
   const { checkPermission } = useAuth();
   
@@ -31,8 +29,6 @@ const MataTable = ({ listMataKuliah,
             editable: false
           }
   ]}
-        itemsEvents={(mataItem) => [
-        ]}
   	/>
   </>
   )

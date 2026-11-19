@@ -39,7 +39,7 @@ const FormAmbilKelas = ({
       ...cleanData,
     })
     .then(({ data: { data } }) => {
-      navigate(`/irs/kelas`)
+      navigate(`/irs/ringkasan`)
   	notifySuccess(`Save Kelas Mahasiswa berhasil!`);
     })
     .catch((error) => {
@@ -64,11 +64,11 @@ const FormAmbilKelas = ({
 	        key="kelasimpl"
 	        name="kelasimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan kelas (id)" }} 
+	        rules={{ required: "Harap masukkan kelas" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Kelas (id)"
-	          placeholder="Masukkan kelas (id)"
+	          label="Kelas"
+	          placeholder="Masukkan kelas"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -81,11 +81,11 @@ const FormAmbilKelas = ({
 	        key="pengisianrencanastudiimpl"
 	        name="pengisianrencanastudiimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan irs (id)" }} 
+	        rules={{ required: "Harap masukkan irs" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="IRS (id)"
-	          placeholder="Masukkan irs (id)"
+	          label="IRS"
+	          placeholder="Masukkan irs"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -98,11 +98,11 @@ const FormAmbilKelas = ({
 	        key="tanggalPengisian"
 	        name="tanggalPengisian"
 	        control={control}
-	        rules={{ required: "Harap masukkan tanggal pengisian (yyyy-mm-dd)" }} 
+	        rules={{ required: "Harap masukkan tanggal pengisian" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Tanggal Pengisian (YYYY-MM-DD)"
-	          placeholder="Masukkan tanggal pengisian (yyyy-mm-dd)"
+	          label="Tanggal Pengisian"
+	          placeholder="Masukkan tanggal pengisian"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -115,7 +115,7 @@ const FormAmbilKelas = ({
 		  ]}
 	
 		  itemsEvents={[
-		    <Button id="yEvSimpanKM" key="Simpan" type="submit" variant="primary">Simpan</Button>
+		    <Button id="_ks9NHpozEfGY1t1YRCeQ79" key="Simpan" type="submit" variant="primary">Simpan</Button>
 	    ]}
 	  />
 	    

@@ -25,6 +25,8 @@ const TableMataKuliahPage = props => {
 
 const [listMataKuliah, setListMataKuliah] = useState()
 
+
+
 useEffect(() => {
 		
 		const fetchData = async () => {
@@ -43,7 +45,21 @@ useEffect(() => {
 	<Layouts.ViewContainerLayout
 		buttons={
 			<>
-			<></>
+			<Layouts.ViewContainerButtonLayout>
+			  	<Link to={`/irs/tambah
+			  	`}>
+			  		<Button id="_fbRdr0JUEfG-v_SjnFPC1a" className="p-2" variant="primary">
+			  		  Isi IRS
+			  		</Button>
+			  	</Link>
+			  	<Link to={`/irs/ringkasan
+			  	`}>
+			  		<Button id="_F3ffzLZsEfG-v_SjnFPC1a" className="p-2" variant="primary">
+			  		  Ringkasan IRS
+			  		</Button>
+			  	</Link>
+			
+			  </Layouts.ViewContainerButtonLayout>
 			</>
 		}
 	>

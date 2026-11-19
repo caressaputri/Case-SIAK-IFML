@@ -4,20 +4,31 @@
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_7J3GoOGxEfGIXdw6TcAYcQ" name="Pengisian IRS">
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="__XBDkOGxEfGIXdw6TcAYcQ" name="Table Mata Kuliah Page">
         <annotations text="/irs"/>
+        <viewElementEvents id="_fbRdr0JUEfG-v_SjnFPC1a" name="Isi IRS">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_dtymNGeKEfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+        </viewElementEvents>
+        <viewElementEvents id="_F3ffzLZsEfG-v_SjnFPC1a" name="Ringkasan IRS">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_S09WlUAtEfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_iaOSMOGzEfGIXdw6TcAYcQ" name="Table Mata Kuliah">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_493BwOG0EfGIXdw6TcAYcQ" name="Save">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UikXIOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
-          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_jsfyYOGzEfGIXdw6TcAYcQ" name="List Mata Kuliah" uniformResourceIdentifier="call/kelas/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Lt_8cOG0EfGIXdw6TcAYcQ" name="Nama Kelas" featureConcept="//@domainModel/@domainElements.84"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_V7cn4OG0EfGIXdw6TcAYcQ" name="Kapasitas" featureConcept="//@domainModel/@domainElements.85"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_LCoOwOG1EfGIXdw6TcAYcQ" name="Table Ringkasan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_LCoOwOG1EfGIXdw6TcAYcQ" name="Table Ringkasan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.1/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/irs/ringkasan"/>
         <viewElements xsi:type="ext:List" id="_Zx5qIOG2EfGIXdw6TcAYcQ" name="Table Ringkasan">
+          <viewElementEvents id="_wFvWevHsEfG-v_SjnFPC1a" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_5NTzSPtvEfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_2AkcF9fUEfG-v_SjnFPC1a">
+                <parameterBindings id="_0_fmPAePEfG-v_SjnFPC1a" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_cptkwOG2EfGIXdw6TcAYcQ" name="List Ringkasan" uniformResourceIdentifier="call/pengisianrencanastudi/list">
+            <parameters id="_dRTPpiwfEfG-v_SjnFPC1a" name="id" direction="out"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_nGOm8OG2EfGIXdw6TcAYcQ" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_y3nxYOG2EfGIXdw6TcAYcQ" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_5w-14OG2EfGIXdw6TcAYcQ" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
@@ -26,10 +37,58 @@
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_h0n4gOG4EfGIXdw6TcAYcQ" name="Save Kelas Mahasiswa" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
         <actionEvents id="_ZdaggOG5EfGIXdw6TcAYcQ">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_eKqSwOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_RCgaD17mEfG-v_SjnFPC1a" name="Isi IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/irs/tambah"/>
+        <viewElements xsi:type="ext:Form" id="_Rx0_UwtQEfG-v_SjnFPC1a" name="Isi IRS">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_493BwOG0EfGIXdw6TcAYcQ" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UikXIOG5EfGIXdw6TcAYcQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_mRJzvylHEfG-v_SjnFPC1a" name="NPM">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_XXLlUukOEfG-v_SjnFPC1a" name="npm">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_47Mjy8DHEfG-v_SjnFPC1a" name="Kelas">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_kEHxfPzFEfG-v_SjnFPC1a" name="namaKelas">
+              <annotations text="Required"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_Ndz76MM3EfG-v_SjnFPC1a" name="Detail IRS Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/irs/:id"/>
+        <viewElements xsi:type="ext:Details" id="_xsUJ4lUfEfG-v_SjnFPC1a" name="Detail IRS">
+          <parameters id="_8CDF9lI4EfG-v_SjnFPC1a" name="id" direction="in"/>
+          <viewElementEvents id="_7Oqtm03HEfG-v_SjnFPC1a" name="Tambah Kelas">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_bXMApVXXEfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+          </viewElementEvents>
+          <viewElementEvents id="_Mx_P7gH3EfG-v_SjnFPC1a" name="Hapus">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_M6mI63C8EfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_8X8JDRcLEfG-v_SjnFPC1a">
+                <parameterBindings id="_2N1fMZGaEfG-v_SjnFPC1a" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_rHWdNVaJEfG-v_SjnFPC1a" name="Detail IRS" uniformResourceIdentifier="call/pengisianrencanastudi/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_fQeVGvZJEfG-v_SjnFPC1a" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_mxyF5GEuEfG-v_SjnFPC1a" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_DEQOwS0kEfG-v_SjnFPC1a" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_8TE7AF8YEfG-v_SjnFPC1a" name="Akhir" featureConcept="//@domainModel/@domainElements.66"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_10dM-UHdEfG-v_SjnFPC1a" name="Alasan Pembatalan" featureConcept="//@domainModel/@domainElements.67"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_GR_7quy2EfG-v_SjnFPC1a" name="Delete Pengisian Rencana Studi" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_CC739qxZEfG-v_SjnFPC1a" name="id" direction="in"/>
+        <actionEvents id="_MeWEeXhlEfG-v_SjnFPC1a">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_r2LATMTqEfG-v_SjnFPC1a" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>

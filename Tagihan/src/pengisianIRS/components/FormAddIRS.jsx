@@ -33,7 +33,7 @@ const FormAddIRS = ({
   
   const navigate = useNavigate()
   
-  const simpan = (data) => {
+  const save = (data) => {
     const cleanData = cleanFormData(data)
     savePengisianRencanaStudi({
       ...cleanData,
@@ -53,30 +53,13 @@ const FormAddIRS = ({
 	<div>
 	  <Layouts.FormComponentLayout
 		  title="Add IRS" 
-		  onSubmit={handleSubmit(simpan)}
+		  onSubmit={handleSubmit(save)}
 	
 	    vas={[
 		  ]}
 	
 		  formFields={[
 	
-	      <Controller
-	        key="status"
-	        name="status"
-	        control={control}
-	        rules={{ required: "Harap masukkan status" }} 
-	        render={({ field, fieldState }) => (
-	        <InputField
-	          label="Status"
-	          placeholder="Masukkan status"
-	          fieldState={fieldState}
-	          {...field}
-	          isRequired={true}
-	        />
-	        )}
-	      />
-	
-	,
 	      <Controller
 	        key="totalSks"
 	        name="totalSks"
@@ -98,11 +81,11 @@ const FormAddIRS = ({
 	        key="mulai"
 	        name="mulai"
 	        control={control}
-	        rules={{ required: "Harap masukkan mulai (yyyy-mm-dd)" }} 
+	        rules={{ required: "Harap masukkan mulai" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Mulai (YYYY-MM-DD)"
-	          placeholder="Masukkan mulai (yyyy-mm-dd)"
+	          label="Mulai"
+	          placeholder="Masukkan mulai"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -115,11 +98,11 @@ const FormAddIRS = ({
 	        key="akhir"
 	        name="akhir"
 	        control={control}
-	        rules={{ required: "Harap masukkan akhir (yyyy-mm-dd)" }} 
+	        rules={{ required: "Harap masukkan akhir" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Akhir (YYYY-MM-DD)"
-	          placeholder="Masukkan akhir (yyyy-mm-dd)"
+	          label="Akhir"
+	          placeholder="Masukkan akhir"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -132,11 +115,11 @@ const FormAddIRS = ({
 	        key="mahasiswaimpl"
 	        name="mahasiswaimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan mahasiswa (id)" }} 
+	        rules={{ required: "Harap masukkan mahasiswa" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Mahasiswa (id)"
-	          placeholder="Masukkan mahasiswa (id)"
+	          label="Mahasiswa"
+	          placeholder="Masukkan mahasiswa"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -149,11 +132,11 @@ const FormAddIRS = ({
 	        key="semesterimpl"
 	        name="semesterimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan semester (id)" }} 
+	        rules={{ required: "Harap masukkan semester" }} 
 	        render={({ field, fieldState }) => (
 	        <InputField
-	          label="Semester (id)"
-	          placeholder="Masukkan semester (id)"
+	          label="Semester"
+	          placeholder="Masukkan semester"
 	          fieldState={fieldState}
 	          {...field}
 	          isRequired={true}
@@ -166,7 +149,7 @@ const FormAddIRS = ({
 		  ]}
 	
 		  itemsEvents={[
-		    <Button id="_493BwOG0EfGIXdw6TcAYcQ" key="Simpan" type="submit" variant="primary">Simpan</Button>
+		    <Button id="_493BwOG0EfGIXdw6TcAYcQ" key="Save" type="submit" variant="primary">Save</Button>
 	    ]}
 	  />
 	    

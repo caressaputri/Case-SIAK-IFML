@@ -10,11 +10,9 @@ import * as Layouts from "@/commons/layouts";
 const DetailIRS = ({ data }) => {
     const { checkPermission } = useAuth();
     const navigate = useNavigate();
-    const ubah = async () => {
+    const tambahKelas = async () => {
       navigate(
-        '/irs/ubah?'
-        + `id=${data.id}`
-        
+        '/irs/tambah?'
       );
     };
     const hapus = async () => {
@@ -59,31 +57,19 @@ const DetailIRS = ({ data }) => {
                   label: "Alasan Pembatalan",
                   featureName: "alasanPembatalan",
                 }
-        ,        {
-                  id: "semester",
-                  condition: "",
-                  label: "Semester",
-                  featureName: "semesterimpl",
-                }
-        ,        {
-                  id: "id",
-                  condition: "",
-                  label: "id",
-                  featureName: "id",
-                }
         
       ]}
       itemsEvents={[
           <Button
-            id="yEvUbahIRS"
+            id="_7Oqtm03HEfG-v_SjnFPC1a"
             variant="secondary"
-            onClick={() => ubah()}
+            onClick={() => tambahKelas()}
           >
-            Ubah
+            Tambah Kelas
           </Button>
         ,
           <Button
-          id="yEvHapusIRS"
+          id="_Mx_P7gH3EfG-v_SjnFPC1a"
           variant="tertiary"
           onClick={() => hapus()}
         >

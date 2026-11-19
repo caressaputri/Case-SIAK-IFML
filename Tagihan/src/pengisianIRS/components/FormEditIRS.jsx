@@ -62,24 +62,6 @@ const FormEditIRS = ({
 		  formFields={[
 	
 	      <Controller
-	        key="status"
-	        name="status"
-	        control={control}
-	        rules={{ required: "Harap masukkan status" }} 
-	        render={({ field, fieldState }) => (
-	        <InputField
-	          label="Status"
-	          placeholder="Masukkan status"
-	          defaultValue={dataIRS.status}
-	          fieldState={fieldState}
-	          {...field}
-	          isRequired={true}
-	        />
-	        )}
-	      />
-	
-	,
-	      <Controller
 	        key="totalSks"
 	        name="totalSks"
 	        control={control}
@@ -96,29 +78,12 @@ const FormEditIRS = ({
 	        )}
 	      />
 	
-	,
-	      <Controller
-	        key="alasanPembatalan"
-	        name="alasanPembatalan"
-	        control={control}
-	        render={({ field, fieldState }) => (
-	        <InputField
-	          label="Alasan Pembatalan"
-	          placeholder="Masukkan alasan pembatalan"
-	          defaultValue={dataIRS.alasanPembatalan}
-	          fieldState={fieldState}
-	          {...field}
-	          isRequired={false}
-	        />
-	        )}
-	      />
-	
 		  ,
 	
 		  ]}
 	
 		  itemsEvents={[
-		    <Button id="yEvUpdIRS" key="Simpan" type="submit" variant="primary">Simpan</Button>
+		    <Button id="_t9OXY4jqEfGY1t1YRCeQ79" key="Simpan" type="submit" variant="primary">Simpan</Button>
 	    ]}
 	  />
 	    

@@ -40,15 +40,7 @@ useEffect(() => {
 	<Layouts.ViewContainerLayout
 		buttons={
 			<>
-			<Layouts.ViewContainerButtonLayout>
-			  	<Link to={`/tagihan/bayar
-			  	`}>
-			  		<Button id="_wAVHENzHEfGG8dLC5rTvHA" className="p-2 w-full" variant="primary">
-			  		  Add Pembayaran
-			  		</Button>
-			  	</Link>
-			
-			  </Layouts.ViewContainerButtonLayout>
+			<></>
 			</>
 		}
 	>
