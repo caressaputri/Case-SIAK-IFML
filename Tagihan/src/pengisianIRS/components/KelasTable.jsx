@@ -4,15 +4,23 @@ import { Link, useNavigate } from "react-router";
 import { useParams } from "@/commons/hooks/useParams"
 import { useAuth } from '@/commons/auth';
 import { Button, Modal, Spinner } from '@/commons/components';
+import { isMobile } from '@/commons/utils/responsive';
 import * as Layouts from "@/commons/layouts";
-const KelasTable = ({ listKelas,
+const KelasTable = ({ kelasRencanaStudiDataList,
+		 
+
 	}) => {
   const { checkPermission } = useAuth();
+  const navigate = useNavigate();
+  const detail = async (kelasItem) => {
+    isMobile() && navigate();
+  };
   
   return (
   <>
     <Layouts.ListComponentTableLayout
-  	  items={[listKelas]}
+  	  items={[kelasRencanaStudiDataList]}
+  	  detail={detail}
   	  itemsAttrs={[
           {
             id: "namaKelas",
@@ -29,13 +37,37 @@ const KelasTable = ({ listKelas,
             editable: false
           }
   ,        {
-            id: "id",
+            id: "jadwal",
             condition: "",
-            label: "id",
-            featureName: "id",
+            label: "Jadwal",
+            featureName: "hari",
+            editable: false
+          }
+  ,        {
+            id: "ruangan",
+            condition: "",
+            label: "Ruangan",
+            featureName: "nama",
+            editable: false
+          }
+  ,        {
+            id: "pengajar",
+            condition: "",
+            label: "Pengajar",
+            featureName: "nama",
+            editable: false
+          }
+  ,        {
+            id: "periode",
+            condition: "",
+            label: "Periode",
+            featureName: "kode",
             editable: false
           }
   ]}
+        itemsEvents={(kelasItem) => [
+          
+        ]}
   	/>
   </>
   )

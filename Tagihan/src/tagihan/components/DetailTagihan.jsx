@@ -15,6 +15,18 @@ const DetailTagihan = ({ data }) => {
       item={data}
       itemsAttrs={[
                 {
+                  id: "nPM",
+                  condition: "",
+                  label: "NPM",
+                  featureName: "npm",
+                }
+        ,        {
+                  id: "namaMahasiswa",
+                  condition: "",
+                  label: "Nama Mahasiswa",
+                  featureName: "nama",
+                }
+        ,        {
                   id: "jumlahTagihan",
                   condition: "isCurrency",
                   label: "Jumlah Tagihan",

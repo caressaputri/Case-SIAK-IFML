@@ -24,6 +24,20 @@ const RingkasanTable = ({ listRingkasan,
   	  detail={detail}
   	  itemsAttrs={[
           {
+            id: "nPM",
+            condition: "",
+            label: "NPM",
+            featureName: "npm",
+            editable: false
+          }
+  ,        {
+            id: "namaMahasiswa",
+            condition: "",
+            label: "Nama Mahasiswa",
+            featureName: "nama",
+            editable: false
+          }
+  ,        {
             id: "status",
             condition: "",
             label: "Status",

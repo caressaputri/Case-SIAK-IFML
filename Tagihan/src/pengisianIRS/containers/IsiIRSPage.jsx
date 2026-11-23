@@ -7,6 +7,7 @@ import { useParams } from "@/commons/hooks/useParams"
 import { HeaderContext } from "@/commons/components"
 import { useSearchParams } from "react-router";
 import FormIsiIRS from '../components/FormIsiIRS'
+import getPilihanKelas from '../services/getPilihanKelas'
 
 const IsiIRSPage = props => {
   const [isLoading, setIsLoading] = useState({
@@ -19,6 +20,20 @@ const IsiIRSPage = props => {
     setTitle("Isi IRS Page")
   }, []);
 
+
+const [pilihanKelas, setPilihanKelas] = useState()
+
+  useEffect(() => {
+    const fetch = async () => {
+	  setIsLoading(prev => ({...prev, isiIRS: true}))
+      const { data: pilihanKelasResponse } = await getPilihanKelas({  })
+
+	  setPilihanKelas(pilihanKelasResponse.data)
+	  setIsLoading(prev => ({...prev, isiIRS: false}))
+    }
+	fetch()
+  }, [])
+
   return (
 	<Layouts.ViewContainerLayout
 		buttons={
@@ -29,11 +44,16 @@ const IsiIRSPage = props => {
 	>
 <Layouts.FormContainerLayout
 		singularName={"IRS"}
-		
+		isLoading={isLoading.isiIRS}
 	>
-		<FormIsiIRS
-			{...props}
-		/>
+		{pilihanKelas ? 
+		(<>
+		 <FormIsiIRS
+			{...{ 
+				pilihanKelas
+				}}
+		 /> 
+		</>)  : (<></>)}
 	</Layouts.FormContainerLayout>
 
 	</Layouts.ViewContainerLayout>

@@ -28,6 +28,18 @@ const DetailIRS = ({ data }) => {
       item={data}
       itemsAttrs={[
                 {
+                  id: "nPM",
+                  condition: "",
+                  label: "NPM",
+                  featureName: "npm",
+                }
+        ,        {
+                  id: "namaMahasiswa",
+                  condition: "",
+                  label: "Nama Mahasiswa",
+                  featureName: "nama",
+                }
+        ,        {
                   id: "status",
                   condition: "",
                   label: "Status",

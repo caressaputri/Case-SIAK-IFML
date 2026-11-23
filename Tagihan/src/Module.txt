@@ -531,3 +531,213 @@ Pengisian IRS
 
 
 
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+	tes1 Isi IRS Page
+	tes1 Detail IRS Page
+
+
+	
+
+	
+	
+
+	
+	
+	
+
+	
+
+
+
+
+
+
+
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+	tes1 Isi IRS Page
+	tes1 Detail IRS Page
+
+
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+	tes1 Isi IRS Page
+	tes1 Detail IRS Page
+
+
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+	tes1 Isi IRS Page
+	tes1 Detail IRS Page
+
+
+	
+
+	
+	
+
+	
+	
+
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+Tagihan
+	tes1 Table Tagihan Page
+	tes1 Detail Tagihan Page
+
+
+	
+
+	
+	
+
+	
+
+
+
+
+Pengisian IRS
+	tes1 Table Mata Kuliah Page
+	tes1 Table Ringkasan Page
+	tes1 Isi IRS Page
+	tes1 Detail IRS Page
+
+
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+

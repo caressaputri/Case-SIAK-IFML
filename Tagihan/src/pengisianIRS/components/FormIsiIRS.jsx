@@ -22,6 +22,7 @@ import { notifyError, notifySuccess} from "@/commons/utils/toaster";
 import * as Layouts from "@/commons/layouts";
 
 const FormIsiIRS = ({ 
+	pilihanKelas
  }) => {
   const { 
     control, 
@@ -76,15 +77,21 @@ const FormIsiIRS = ({
 	        )}
 	      />
 	
-	,
+		  ,
+	
+	
 	      <Controller
-	        key="namaKelas"
-	        name="namaKelas"
+	        key="kelasimpl"
+	        name="kelasimpl"
 	        control={control}
-	        rules={{ required: "Harap masukkan kelas" }} 
+	        rules={{ required: "Harap pilih kelas" }} 
 	        render={({ field, fieldState }) => (
-	        <InputField
+	        <MultiSelectionField
+	          
 	          label="Kelas"
+	          options={pilihanKelas}
+	          optionKey="kelasimpl"
+	          optionLabel="nama"
 	          placeholder="Masukkan kelas"
 	          fieldState={fieldState}
 	          {...field}
@@ -92,9 +99,6 @@ const FormIsiIRS = ({
 	        />
 	        )}
 	      />
-	
-		  ,
-	
 		  ]}
 	
 		  itemsEvents={[
