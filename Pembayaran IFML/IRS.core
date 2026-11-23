@@ -29,6 +29,8 @@
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_cptkwOG2EfGIXdw6TcAYcQ" name="List Ringkasan" uniformResourceIdentifier="call/pengisianrencanastudi/list">
             <parameters id="_dRTPpiwfEfG-v_SjnFPC1a" name="id" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_KzAKpPjhEfG-v_SjnFPC1a" name="NPM" featureConcept="//@domainModel/@domainElements.30"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_P4O7eeRhEfG-v_SjnFPC1a" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.31"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_nGOm8OG2EfGIXdw6TcAYcQ" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_y3nxYOG2EfGIXdw6TcAYcQ" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_5w-14OG2EfGIXdw6TcAYcQ" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>
@@ -54,9 +56,12 @@
               <annotations text="Required"/>
             </subViewComponentParts>
           </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_47Mjy8DHEfG-v_SjnFPC1a" name="Kelas">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_kEHxfPzFEfG-v_SjnFPC1a" name="namaKelas">
-              <annotations text="Required"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_SYOUaLwUEfG-v_SjnFPC1a" name="Pilihan Kelas" uniformResourceIdentifier="call/kelas/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_47Mjy8DHEfG-v_SjnFPC1a" name="Kelas" isMultiSelection="true">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_kEHxfPzFEfG-v_SjnFPC1a" name="kelasimpl" direction="out">
+                <annotations text="Required"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_dm6GUbzdEfG-v_SjnFPC1a" name="nama" direction="in"/>
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
@@ -76,6 +81,8 @@
             </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_rHWdNVaJEfG-v_SjnFPC1a" name="Detail IRS" uniformResourceIdentifier="call/pengisianrencanastudi/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_bXt9brQ6EfG-v_SjnFPC1a" name="NPM" featureConcept="//@domainModel/@domainElements.30"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_x1MLIPOnEfG-v_SjnFPC1a" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.31"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_fQeVGvZJEfG-v_SjnFPC1a" name="Status" featureConcept="//@domainModel/@domainElements.63"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_mxyF5GEuEfG-v_SjnFPC1a" name="Total SKS" featureConcept="//@domainModel/@domainElements.64"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_DEQOwS0kEfG-v_SjnFPC1a" name="Mulai" featureConcept="//@domainModel/@domainElements.65"/>

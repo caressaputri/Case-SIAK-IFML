@@ -16,6 +16,8 @@
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_dPx0sNg-EfGG8dLC5rTvHA" name="List Tagihan" uniformResourceIdentifier="call/tagihan/list">
             <parameters id="_wwp08NzAEfGG8dLC5rTvHA" name="id" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_rfk1w8COEfGG8dLC5rTvHA" name="NPM" featureConcept="//@domainModel/@domainElements.23"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_2Eo10HVtEfGG8dLC5rTvHA" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.24"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_xNijoNg-EfGG8dLC5rTvHA" name="Jumlah Tagihan" featureConcept="//@domainModel/@domainElements.15">
               <annotations text="isCurrency"/>
             </subViewComponentParts>
@@ -29,6 +31,8 @@
         <viewElements xsi:type="ext:Details" id="_wgLa4Ny-EfGG8dLC5rTvHA" name="Detail Tagihan">
           <parameters id="_-WZ48NzAEfGG8dLC5rTvHA" name="id" direction="in"/>
           <viewComponentParts xsi:type="core:DataBinding" id="_y4PecNy-EfGG8dLC5rTvHA" name="Detail Tagihan" uniformResourceIdentifier="call/tagihan/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_M-IQ9blZEfGG8dLC5rTvHA" name="NPM" featureConcept="//@domainModel/@domainElements.23"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1u_2vllCEfGG8dLC5rTvHA" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.24"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4rzYgNy-EfGG8dLC5rTvHA" name="Jumlah Tagihan" featureConcept="//@domainModel/@domainElements.15">
               <annotations text="isCurrency"/>
             </subViewComponentParts>
