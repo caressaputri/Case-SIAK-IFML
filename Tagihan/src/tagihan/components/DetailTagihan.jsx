@@ -34,6 +34,12 @@ const DetailTagihan = ({ data }) => {
                   featureName: "nama",
                 }
         ,        {
+                  id: "semester",
+                  condition: "",
+                  label: "Semester",
+                  featureName: "kode",
+                }
+        ,        {
                   id: "jumlahTagihan",
                   condition: "isCurrency",
                   label: "Jumlah Tagihan",

@@ -38,6 +38,13 @@ const TagihanTable = ({ listTagihan,
             editable: false
           }
   ,        {
+            id: "semester",
+            condition: "",
+            label: "Semester",
+            featureName: "kode",
+            editable: false
+          }
+  ,        {
             id: "jumlahTagihan",
             condition: "isCurrency",
             label: "Jumlah Tagihan",
