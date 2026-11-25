@@ -10,6 +10,7 @@ import FormIsiIRS from '../components/FormIsiIRS'
 import getPilihanKelas from '../services/getPilihanKelas'
 import DataMahasiswa from '../components/DataMahasiswa'
 import getDataMahasiswa from '../services/getDataMahasiswa'
+import { notifyError } from '@/commons/utils/toaster'
 
 const IsiIRSPage = props => {
   const [isLoading, setIsLoading] = useState({
@@ -37,6 +38,7 @@ const [pilihanKelas, setPilihanKelas] = useState()
 	fetch()
   }, [])
 const [dataMahasiswa, setDataMahasiswa] = useState()
+useEffect(() => { if (dataMahasiswa?.bolehIsiIrs === false) notifyError(dataMahasiswa.alasanIrs) }, [dataMahasiswa])
 useEffect(() => {
 		const fetchData = async () => {
 			try {
