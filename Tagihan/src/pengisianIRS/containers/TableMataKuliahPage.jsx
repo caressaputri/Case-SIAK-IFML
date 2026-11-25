@@ -27,6 +27,7 @@ const [listMataKuliah, setListMataKuliah] = useState()
 
 
 
+
 useEffect(() => {
 		
 		const fetchData = async () => {
@@ -56,6 +57,12 @@ useEffect(() => {
 			  	`}>
 			  		<Button id="_F3ffzLZsEfG-v_SjnFPC1a" className="p-2" variant="primary">
 			  		  Ringkasan IRS
+			  		</Button>
+			  	</Link>
+			  	<Link to={`/irs/persetujuan
+			  	`}>
+			  		<Button id="_kOKpendTEfG-v_SjnFPC1a" className="p-2" variant="primary">
+			  		  Persetujuan IRS
 			  		</Button>
 			  	</Link>
 			

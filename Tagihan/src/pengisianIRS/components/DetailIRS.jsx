@@ -82,7 +82,7 @@ const DetailIRS = ({ data }) => {
         ,
           <Button
           id="_Mx_P7gH3EfG-v_SjnFPC1a"
-          variant="tertiary"
+          variant="secondary"
           onClick={() => hapus()}
         >
           Hapus

@@ -20,6 +20,7 @@ import cleanFormData from "@/commons/utils/cleanFormData";
 import saveKelasMahasiswa from '../services/saveKelasMahasiswa'
 import { notifyError, notifySuccess} from "@/commons/utils/toaster";
 import * as Layouts from "@/commons/layouts";
+import PilihKelasField from "./PilihKelasField";
 
 const FormIsiIRS = ({ 
 	pilihanKelas
@@ -60,24 +61,7 @@ const FormIsiIRS = ({
 		  ]}
 	
 		  formFields={[
-	
-	      <Controller
-	        key="npm"
-	        name="npm"
-	        control={control}
-	        rules={{ required: "Harap masukkan npm" }} 
-	        render={({ field, fieldState }) => (
-	        <InputField
-	          label="NPM"
-	          placeholder="Masukkan npm"
-	          fieldState={fieldState}
-	          {...field}
-	          isRequired={true}
-	        />
-	        )}
-	      />
-	
-		  ,
+		  
 	
 	
 	      <Controller
@@ -86,7 +70,7 @@ const FormIsiIRS = ({
 	        control={control}
 	        rules={{ required: "Harap pilih kelas" }} 
 	        render={({ field, fieldState }) => (
-	        <MultiSelectionField
+	        <PilihKelasField
 	          
 	          label="Kelas"
 	          options={pilihanKelas}

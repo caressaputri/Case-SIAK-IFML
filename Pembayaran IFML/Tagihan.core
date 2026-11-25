@@ -3,7 +3,7 @@
   <interactionFlowModel id="_moWjENg9EfGG8dLC5rTvHA">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_mpDtsNg9EfGG8dLC5rTvHA" name="Tagihan">
       <inputPorts id="_UPP9cNhAEfGG8dLC5rTvHA" name="Input Port"/>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_r1mEANg9EfGG8dLC5rTvHA" name="Table Tagihan Page">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_r1mEANg9EfGG8dLC5rTvHA" name="Table Tagihan Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/tagihan"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="Pembayaran.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_XL0HINg-EfGG8dLC5rTvHA" name="Table Tagihan">
@@ -30,6 +30,13 @@
         <annotations text="/tagihan/:id"/>
         <viewElements xsi:type="ext:Details" id="_wgLa4Ny-EfGG8dLC5rTvHA" name="Detail Tagihan">
           <parameters id="_-WZ48NzAEfGG8dLC5rTvHA" name="id" direction="in"/>
+          <viewElementEvents id="_GL1P5KF3EfGG8dLC5rTvHA" name="Konfirmasi Pembayaran">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_H6Mt8GG2EfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+              <parameterBindingGroup id="_qy0I_X2XEfGG8dLC5rTvHA">
+                <parameterBindings id="_OzTFtcy7EfGG8dLC5rTvHA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_y4PecNy-EfGG8dLC5rTvHA" name="Detail Tagihan" uniformResourceIdentifier="call/tagihan/detail">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_M-IQ9blZEfGG8dLC5rTvHA" name="NPM" featureConcept="//@domainModel/@domainElements.23"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_1u_2vllCEfGG8dLC5rTvHA" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.24"/>
@@ -37,12 +44,23 @@
               <annotations text="isCurrency"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NOBfYNy_EfGG8dLC5rTvHA" name="Status Pembayaran" featureConcept="//@domainModel/@domainElements.16"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_DQ94pLIfEfGG8dLC5rTvHA" name="Jumlah Terbayar">
+              <featureConcept href="IRS.core#//@domainModel/@domainElements.23"/>
+              <annotations text="isCurrency"/>
+            </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_V5bwUNy_EfGG8dLC5rTvHA" name="Jatuh Tempo">
               <featureConcept href="Pembayaran.core#//@domainModel/@domainElements.17"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_SraDMNzBEfGG8dLC5rTvHA" name="id" featureConcept="//@domainModel/@domainElements.22"/>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_RiokXjh_EfGG8dLC5rTvHA" name="Konfirmasi Tagihan" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <parameters id="_0c-U-wRDEfGG8dLC5rTvHA" name="id" direction="in"/>
+        <actionEvents id="_6rr_z75ZEfGG8dLC5rTvHA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_lWeMroc7EfGG8dLC5rTvHA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>

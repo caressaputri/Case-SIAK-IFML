@@ -8,10 +8,13 @@ import { HeaderContext } from "@/commons/components"
 import { useSearchParams } from "react-router";
 import FormIsiIRS from '../components/FormIsiIRS'
 import getPilihanKelas from '../services/getPilihanKelas'
+import DataMahasiswa from '../components/DataMahasiswa'
+import getDataMahasiswa from '../services/getDataMahasiswa'
 
 const IsiIRSPage = props => {
   const [isLoading, setIsLoading] = useState({
 	isiIRS: false,
+	dataMahasiswa: false,
 
   });
   const { setTitle } = useContext(HeaderContext);
@@ -33,6 +36,19 @@ const [pilihanKelas, setPilihanKelas] = useState()
     }
 	fetch()
   }, [])
+const [dataMahasiswa, setDataMahasiswa] = useState()
+useEffect(() => {
+		const fetchData = async () => {
+			try {
+				setIsLoading(prev => ({...prev, dataMahasiswa: true}))
+				const { data: dataMahasiswa } = await getDataMahasiswa({  })
+				setDataMahasiswa(dataMahasiswa.data)
+			} finally {
+				setIsLoading(prev => ({...prev, dataMahasiswa: false}))
+			}
+		}
+		fetchData()
+	}, [])
 
   return (
 	<Layouts.ViewContainerLayout
@@ -46,7 +62,7 @@ const [pilihanKelas, setPilihanKelas] = useState()
 		singularName={"IRS"}
 		isLoading={isLoading.isiIRS}
 	>
-		{pilihanKelas ? 
+		{dataMahasiswa?.bolehIsiIrs === false ? (<div role="alert" className="alert alert-warning">{dataMahasiswa.alasanIrs}</div>) : pilihanKelas && dataMahasiswa ? 
 		(<>
 		 <FormIsiIRS
 			{...{ 
@@ -55,6 +71,16 @@ const [pilihanKelas, setPilihanKelas] = useState()
 		 /> 
 		</>)  : (<></>)}
 	</Layouts.FormContainerLayout>
+<Layouts.DetailContainerLayout
+	title={"Data Mahasiswa"}
+	singularName={"Mahasiswa"}
+	items={{...dataMahasiswa}}
+	isLoading={isLoading.dataMahasiswa}
+	isCorrelatedWithAnotherComponent={false}
+>
+	<DataMahasiswa {...{ data : { ...dataMahasiswa }}} />
+	<p className="text-sm mt-2">Status UKT: {dataMahasiswa?.statusUkt ?? "-"} | Dosen PA: {dataMahasiswa?.dosenPa ?? "-"}</p>
+</Layouts.DetailContainerLayout>
 
 	</Layouts.ViewContainerLayout>
   )

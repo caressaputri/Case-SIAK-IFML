@@ -3,11 +3,18 @@ import React, { useContext } from 'react';
 import { useNavigate, Link } from "react-router";
 import { useAuth } from '@/commons/auth';
 import { Button, Detail, VisualizationAttr, Modal, Spinner } from '@/commons/components';
+import konfirmasiTagihan from '../services/konfirmasiTagihan'
 import * as Layouts from "@/commons/layouts";
 
 const DetailTagihan = ({ data }) => {
     const { checkPermission } = useAuth();
     const navigate = useNavigate();
+    const konfirmasiPembayaran = async () => {
+      await konfirmasiTagihan({
+        id: data.id,
+      });
+  	navigate('/tagihan');
+    }
   
   
   return (
@@ -39,6 +46,12 @@ const DetailTagihan = ({ data }) => {
                   featureName: "statusPembayaran",
                 }
         ,        {
+                  id: "jumlahTerbayar",
+                  condition: "isCurrency",
+                  label: "Jumlah Terbayar",
+                  featureName: "jumlahTerbayar",
+                }
+        ,        {
                   id: "jatuhTempo",
                   condition: "",
                   label: "Jatuh Tempo",
@@ -53,6 +66,13 @@ const DetailTagihan = ({ data }) => {
         
       ]}
       itemsEvents={[
+          <Button
+            id="_GL1P5KF3EfGG8dLC5rTvHA"
+            variant="secondary"
+            onClick={() => konfirmasiPembayaran()}
+          >
+            Konfirmasi Pembayaran
+          </Button>
         
       ]}
       itemsModals={[

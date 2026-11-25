@@ -6,3 +6,6 @@ var selectedFeatures = Array.from(new Set ([
 
 "Home",
 ]))
+
+"Home",
+]))

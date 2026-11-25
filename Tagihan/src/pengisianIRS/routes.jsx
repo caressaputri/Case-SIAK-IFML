@@ -4,6 +4,8 @@ import TableMataKuliahPage from './containers/TableMataKuliahPage'
 import TableRingkasanPage from './containers/TableRingkasanPage'
 import IsiIRSPage from './containers/IsiIRSPage'
 import DetailIRSPage from './containers/DetailIRSPage'
+import PersetujuanIRSPage from './containers/PersetujuanIRSPage'
+import DetailPersetujuanPage from './containers/DetailPersetujuanPage'
 
 const pengisianIRSRoutes = [
 { 
@@ -17,6 +19,11 @@ const pengisianIRSRoutes = [
   }	
 ,
 { 
+    path: "/irs/persetujuan",
+    element: <PersetujuanIRSPage />,
+  }	
+,
+{ 
     path: "/irs/tambah",
     element: <IsiIRSPage />,
   }	
@@ -24,6 +31,11 @@ const pengisianIRSRoutes = [
 { 
     path: "/irs/:id",
     element: <DetailIRSPage />,
+  }	
+,
+{ 
+    path: "/irs/persetujuan/:id",
+    element: <DetailPersetujuanPage />,
   }	
 
 ]
