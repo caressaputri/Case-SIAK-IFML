@@ -64,7 +64,7 @@
           </viewComponentParts>
         </viewElements>
         <viewElements xsi:type="ext:Details" id="_Vf0DToIbEfG-v_SjnFPC1a" name="Data Mahasiswa">
-          <viewComponentParts xsi:type="core:DataBinding" id="_HLTz9-yXEfG-v_SjnFPC1a" name="Data Mahasiswa" uniformResourceIdentifier="call/mahasiswa/saya">
+          <viewComponentParts xsi:type="core:DataBinding" id="_HLTz9-yXEfG-v_SjnFPC1a" name="Data Mahasiswa" uniformResourceIdentifier="call/pengisianrencanastudi/saya">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_WptZ0JH-EfG-v_SjnFPC1a" name="NPM" featureConcept="//@domainModel/@domainElements.30"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Dz058pUZEfG-v_SjnFPC1a" name="Nama Mahasiswa" featureConcept="//@domainModel/@domainElements.31"/>
           </viewComponentParts>
